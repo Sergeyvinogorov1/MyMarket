@@ -29,9 +29,12 @@ p {
 
 ul {
 margin-left: 20px;
-list-style-type: disc;
+
 }
 
+li::marker {
+    color: #888888;
+}
 
 iframe {
     border-width: 1px;
