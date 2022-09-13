@@ -76,6 +76,14 @@ iframe {
     color: #008CF0;
 }
 
+.breadcrumbs__text a:hover {
+    color:#F36223;
+}
+
+.breadcrumbs__blacktext {
+    color:#000000;
+}
+
 .characteric_container { /*Блок характеристик*/
     display: flex;
     flex-direction: row;
@@ -143,9 +151,17 @@ iframe {
     width: 80px; /* Ширина элемента */
     height: 80px; /* Высота элемента */
     border: 1px solid #888888; /* Рамка */
+    background-color: white;
     border-radius: 4px; /* Закругление рамки */
     box-sizing: border-box;
     gap: 10px; /* Отступ между элементами */
+}
+
+.square-imgae:hover {
+    background: #F2F2F2;
+}
+.square-imgae:focus {
+    border: 2px solid #F36223;
 }
 
 
@@ -174,7 +190,6 @@ iframe {
     background-color: #FFFFFF;
 
     box-sizing: border-box;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -186,20 +201,27 @@ iframe {
     border-radius: 4px;
 }
 
+
+
 .configuration__button:hover {
-    background: #F36223;
+    background: #F2F2F2;
     transition: all 0.3s;
+}
+
+.configuration__button:focus {
+    outline: 2px solid #F36223;
+    border: 1px solid #F36223;
+
 }
 
 
 .configuration__main_text {
-
     font-family: sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
+    white-space: nowrap;
 }
 
 .product_characteristics {
@@ -488,6 +510,7 @@ line-height: 19px;
 
     background: #F36223;
     border-radius: 4px;
+    border: solid 0px;
 }
 
 .button_backet__add {
@@ -502,6 +525,101 @@ line-height: 19px;
     
     color: #FFFFFF;
 }
+
+.button_backet:hover {
+    background: #DA4A0C;
+}
+
+
+.orders {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 30px;
+    
+    position: relative;
+    width: 760px;
+    height: 635px;
+    
+    /* White */
+    
+    background: #FFFFFF;
+}
+
+.orders__text {
+    width: 265px;
+    height: 29px;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #000000;
+}
+
+.orders__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    
+    width: 608px;
+    height: 516px;
+    
+}
+
+.order__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    
+    width: 367px;
+    height: 136px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.orders__listtext {
+    width: 251px;
+    height: 19px;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.orders__listdevice {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    
+    width: 367px;
+    height: 107px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
 
 .images {
     display: flex;
