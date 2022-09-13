@@ -159,6 +159,7 @@ iframe {
 
 .square-imgae:hover {
     background: #F2F2F2;
+    transition: all 0.3s;
 }
 .square-imgae:focus {
     border: 2px solid #F36223;
@@ -211,9 +212,7 @@ iframe {
 .configuration__button:focus {
     outline: 2px solid #F36223;
     border: 1px solid #F36223;
-
 }
-
 
 .configuration__main_text {
     font-family: sans-serif;
