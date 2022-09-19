@@ -44,17 +44,17 @@ iframe {
 
 .breadcrumbs {
     display: flex;
-    gap: 4px;
-
     flex-direction: row;
     align-items: center;
     padding: 8px 0px;
-
+    gap: 4px;
+    
     position: absolute;
     width: 558px;
     height: 35px;
     left: 50px;
     top: 91px;
+    
     
 }
 
@@ -678,17 +678,66 @@ line-height: 19px;
 .resolution {
     position: relative;
     width: 1500px;
-    height: 1942px;
+    height: 2297px;
     
     background: #F8FAFE;
 }
 
-.icon {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px 51px;
     gap: 10px;
+    
+    position: absolute;
+    width: 1500px;
+    height: 80px;
+    left: 0px;
+    top: 1px;    
+}
+
+.header_main {
+    width: 1398px;
+    height: 80px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.logo {
+
+    position: absolute;
+    width: 36.5px;
+    height: 43px;
+    left: 51px;
+    top: 30px    
+}
+
+.header_text {
+    position: absolute;
+    width: 1351.5px;
+    height: 80px;
+    left: 97.5px;
+    top: 0px;    
+}
+
+.header_text_main {
+    position: absolute;
+    width: 263px;
+    height: 53px;
+    left: 10px;
+    top: 30px;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
 }
 
 .table {
@@ -1086,7 +1135,7 @@ color: #000000;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0px;
+
     
     width: 1400px;
     height: 111px;
