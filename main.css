@@ -197,11 +197,11 @@ iframe {
 
 .configuration__button:hover {
     background: #F2F2F2;
-    transition: all 0.3s;
+
 }
 
 .configuration__button:focus {
-    outline: 2px solid #F36223;
+    outline: 1px solid #F36223;
     border: 1px solid #F36223;
 }
 
