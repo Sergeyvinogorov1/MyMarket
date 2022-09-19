@@ -51,18 +51,18 @@
             </div>
           <div class="configuration_button__list">
             <button class="configuration__button">
-              <div class="configuration__main_text">128 ГБ
-              </div>
+              <span class="configuration__main_text">128 ГБ
+              </span>
             </button>
             <button class="configuration__button">
-              <div class="configuration__main_text">
+              <span class="configuration__main_text">
                 256 ГБ
-              </div>
+              </span>
             </button>
             <button class="configuration__button">
-              <div class="configuration__main_text">
+              <span class="configuration__main_text">
                 512 ГБ
-              </div>
+              </span>
             </button>
           </div>
         </div>
@@ -154,93 +154,148 @@
     </div> <!--Граница контейнера с рекламой-->
   </div> <!--Конец сайдбара-->
     </div>
-  <div class="models_container"> <!--Сравнение моделей-->
-    <h3>Сравнение моделей</h3>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Модель</th>
-          <th>Вес</th>
-          <th>Высота</th>
-          <th>Ширина</th>
-          <th>Толщина</th>
-          <th>Чип</th>
-          <th>Объем памяти</th>
-          <th>Беспроводная зарядка</th>
-          <th>Аккумулятор</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>IPhone 11</td>
-          <td>194 грамма</td>
-          <td>150.9 мм</td>
-          <td>75.7 мм</td>
-          <td>8.3 мм</td>
-          <td>A13 Bionicchip</td>
-          <td>до 128 Гб</td>
-          <td>Нет</td>
-          <td>До 17 часов</td>
-        </tr>
-        <tr>
-          <td>IPhone 12</td>
-          <td>164 грамма</td>
-          <td>146.7 мм</td>
-          <td>71.5 мм</td>
-          <td>7.4 мм</td>
-          <td>A14 Bionicchip</td>
-          <td>до 256 Гб</td>
-          <td>Да</td>
-          <td>До 19 часов</td>
-        </tr>
-        <tr>
-          <td>IPhone 13</td>
-          <td>174 грамма</td>
-          <td>146.7 мм</td>
-          <td>71.5 мм</td>
-          <td>7.65 мм</td>
-          <td>A15 Bionicchip</td>
-          <td>до 512 Гб</td>
-          <td>Да</td>
-          <td>До 19 часов</td>
-        </tr>
-      </tbody>
-    </table>
-  </div> <!--Сравнение моделей-->
+  
+<!--Здесь сравнение моделей-->
+
   </main>
-<div class="review_block"> <!-- еще не применен-->
-  <h3>Отзывы <span style="color: #aaaaaa;">425</span> <button style="margin-left: 2px;">Добавить отзыв</button></h3>
-  <div class="review">
+<div class="review_block"> <!-- Основной контейнер с отзывами-->
+
+  <div class="review__title"> <!-- Контейнер с заголовком-->
+  <div class="review_text_number"> <!-- Текст-->
+    <span class="review__text">Отзывы</span>
+    <span class="review__number">425</span>
+  </div>
+  <button class="review__btn"> <span class="review__add">Добавить отзыв</span></button>
+  </div>
+
+<div class="review_list"> <!--Контейнер с отзывами-->
+
+  <div class="review_first">
     <img class="review__photo" src="resources/images/review-1.jpeg" height="200" alt="Фото">
-    <div>
-      <p><b>Марк Г.</b></p>
-      <div class="review_estimation"><img src="resources/images/star-5.png" height="30" alt="Оценка"></div>
-      <p><b>Опыт использования:</b> менее месяца</p>
-      <p><b>Достоинства:</b><br>
-      это мой первый айфон после после огромного количества телефонов на андроиде. всёплавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,ширик тоже на высоте</p>
-      <p><b>Недостатки:</b><br>
-      к самому устройству мало имеет отношение, но перенос данных с андроида - адскаявещь) а если нужно переносить фото с компа, то это только через itunes, которыйурезает качество фотографий исходное</p>
+    <div class="review__content">
+      <div class="review__head">
+        <div class="review_username">Марк Г.</div>
+        
+        <div class="review_estimation">
+          <div class="full-stars">
+            <div class="rating-group">
+                <!-- по умолчанию 0 -->
+                <input name="review" value="0" type="radio" disabled checked />
+                
+                <!-- рейтинг 1 -->    
+                <label for="review-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                </label>
+                <input name="review" id="review-1" value="1" type="radio" />
+                
+                <!-- рейтинг 2 -->    
+                <label for="review-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                </label>
+                <input name="review" id="review-2" value="2" type="radio" />
+                
+                <!-- рейтинг 3 -->    
+                <label for="review-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                </label>
+                <input name="review" id="review-3" value="3" type="radio" />
+                
+                <!-- рейтинг 4 -->        
+                <label for="review-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                </label>
+                <input name="review" id="review-4" value="4" type="radio" />
+                
+                <!-- рейтинг 5 -->    
+                <label for="review-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+                </label>
+                <input name="review" id="review-5" value="5" type="radio" />
+            </div>
+        </div>
+        </div>
+
+      </div>
+      <div class="review__information">
+      <div class="review__text_information1"> <b>Опыт использования:</b> менее месяца</div>
+      <div class="review__text_information2"><b>Достоинства:</b><br>
+        это мой первый айфон после после огромного количества телефонов на андроиде. всёплавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,ширик тоже на высоте</div>
+      <div class="review__text_information3"><b>Недостатки:</b><br>
+        к самому устройству мало имеет отношение, но перенос данных с андроида - адскаявещь) а если нужно переносить фото с компа, то это только через itunes, которыйурезает качество фотографий исходное</div>
+      </div>
     </div>
   </div>
-  <hr>
-  <div class="review">
-    <img class="review__photo" src="resources/images/review-2.jpeg" height="200" alt="Фото">
-    <div>
-      <p><b>Валерий Коваленко</b></p>
-      <div class="review_estimation"><img src="resources/images/star-4.png" height="30" alt="Оценка"></div>
-      <p><b>Опыт использования:</b> менее месяца</p>
-      <p><b>Достоинства:</b><br>
-      OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго</p>
-      <p><b>Недостатки:</b><br>
-      Плохая ремонтопригодность</p>
+
+  <div>
+    <div class="hr"></div>
+  </div>
+<div class="review_second"> <!--Второй отзыв-->
+
+  <img class="review__photo" src="resources/images/review-2.jpeg" height="200" alt="Фото">
+  <div class="review__content2">
+    <div class="review__head2">
+      <div class="review_username"><b>Валерий Коваленко</b></div>
+      <div class="review_estimation">
+        <div class="full-stars">
+          <div class="rating-group">
+              <!-- по умолчанию 0 -->
+              <input name="review2" value="0" type="radio" disabled checked />
+              
+              <!-- рейтинг 1 -->    
+              <label for="review2-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+              </label>
+              <input name="review2" id="review2-1" value="1" type="radio" />
+              
+              <!-- рейтинг 2 -->    
+              <label for="review2-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+              </label>
+              <input name="review2" id="review2-2" value="2" type="radio" />
+              
+              <!-- рейтинг 3 -->    
+              <label for="review2-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+              </label>
+              <input name="review2" id="review2-3" value="3" type="radio" />
+              
+              <!-- рейтинг 4 -->        
+              <label for="review2-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+              </label>
+              <input name="review2" id="review2-4" value="4" type="radio" />
+              
+              <!-- рейтинг 5 -->    
+              <label for="review2-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"/></svg>
+              </label>
+              <input name="review2" id="review2-5" value="5" type="radio" />
+          </div>
+      </div>
+      </div>
     </div>
+    <div class="review_informaiton_second">
+      <div class="review__text_information1"><b>Опыт использования:</b> менее месяца</div>
+      <div class="review__text_information2"><b>Достоинства:</b><br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго</div>
+      <div class="review__text_information3"><b>Недостатки:</b><br>Плохая ремонтопригодность</div>
+    </div>
+  </div>
+</div> <!--Граница второго отзыва-->
+    </div>
+  </div> <!--Граница контейнера с отзывами-->
+
+  <footer class="footer_container">
+    <div class="footer_container2">
+  <div>
+      <div class="footer">
+        <span>© ООО «<span class="color_text">Мой</span>Маркет», 2018-2022.</span>
+      </div>
+  <div class="footer__information">
+    <span>Для уточнения информации звоните по номеру <a href="tel:+79000000000">+7 900 000 0000</a>, <br>
+    а предложения по сотрудничеству отправляйте на почту <a href="mailto:partner@mymarket.com">partner@mymarket.com</a></span>
   </div>
 </div>
-
-  <footer>
-    <div class="footer">
-    <p>© ООО «МойМаркет», 2018-2022. Для уточнения информации звоните по номеру <a href="tel:+79000000000">+7 900 000 0000</a>, а предложения по сотрудничеству отправляйте на почту <a href="mailto:partner@mymarket.com">partner@mymarket.com</a></p>
-    <p><a href="#top">Наверх</a></p>
+    <div class="footer__up"><span><a href="#top">Наверх</a></span></div>
     </div>
   </footer>
 
