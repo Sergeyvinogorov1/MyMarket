@@ -6,26 +6,26 @@
   <link rel="icon" href="resources/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./main.css">
 </head>
-<body class="resolution"> <!--Разршение сайта-->
+<body class="body"> <!--Разршение сайта-->
   <header class="header"> <!--Шапка сайта-->
-    <div class="header_main">
-      <div class=logo> <img src="resources/apple-touch-icon.png" height="48" alt="Логотип"></div>
+    <div class="header__main">
+      <div class=logo>
+        <img src="resources/apple-touch-icon.png" height="48" alt="Логотип">
+      </div>
     </div>
     <div class="header_text">
-      <div class="header_text_main"><span style="color: #f52">Мой</span>Маркет</div>
-      </div>
+      <div class="header_text_main"><span class="color_text">Мой</span>Маркет</div>
+    </div>
   </header>
   <nav class="breadcrumbs"> <!--Хлебные крошки-->
     <div class="breadcrumbs__text">
-    <a href="#">Электроника</a> <span class="breadcrumbs__blacktext">&gt;</span> <a href="#">Смартфоны и гаджеты</a> <span class="breadcrumbs__blacktext">&gt;</span> <a href="#">Мобильные телефоны</a> <span class="breadcrumbs__blacktext">&gt;</span> <a href="#">Apple</a>
+    <a class="link" href="#">Электроника</a> <span class="breadcrumbs__blacktext">&gt;</span> <a class="link" href="#">Смартфоны и гаджеты</a> <span class="breadcrumbs__blacktext">&gt;</span> <a class="link" href="#">Мобильные телефоны</a> <span class="breadcrumbs__blacktext">&gt;</span> <a class="link" href="#">Apple</a>
     </div>
   </nav>
   <main>
 
     <div class="title"> <!--Название товара-->
-
-      <div class="title__device">Смартфон Apple iPhone 13, синий</div>
-
+      <div class="title__item">Смартфон Apple iPhone 13, синий</div>
     </div>
 
     <div class="images"> <!--Фотографии товара-->
@@ -35,70 +35,59 @@
       <img src="resources/images/image-4.webp" height="400" alt="Внешний вид камеры" class="images__phone4">
       <img src="resources/images/image-5.webp" height="400" alt="Телефон с обеих сторон" class="images__phone5">
     </div>
-    <div class="characteric_container"> <!-- Блок характеристик -->
-      <div class="characteric"> <!-- Характеристики -->
-        <div class="characteric_color"> <!-- Цвет товара -->
-          <div class="characteric_text"> <!-- Текст товара (контейнер) -->
+    <div class="characterics"> <!-- Блок характеристик с фреймами и корзиной -->
+      <div class="characterics__main"> <!-- Характеристики -->
+        <div class="characterics__color"> <!-- Цвет товара -->
+          <div class="characterics__title"> <!-- Текст товара (контейнер) -->
             <h3>Цвет товара: Cиний</h3>
           </div>
-          <div class="characteric_list"> <!-- Выбор цвета -->
-            
-            <button class="square-imgae"><img src="resources/images/color-1.webp" width="30,93" height="60" alt="Красный"></button>
-            <button class="square-imgae"><img src="resources/images/color-2.webp" width="30,93" height="60" alt="Серый"></button>
-            <button class="square-imgae"><img src="resources/images/color-3.webp" width="30,93" height="60" alt="Розовый"></button>
-            <button class="square-imgae"><img src="resources/images/color-4.webp" width="30,93" height="60" alt="Голубой"></button>
-            <button class="square-imgae"><img src="resources/images/color-5.webp" width="30,93" height="60" alt="Белый"></button>
+          <div class="characterics__list"> <!-- Выбор цвета -->
+            <button class="button square-imgae"><img src="resources/images/color-1.webp" width="30,93" height="60" alt="Красный"></button>
+            <button class="button square-imgae"><img src="resources/images/color-2.webp" width="30,93" height="60" alt="Серый"></button>
+            <button class="button square-imgae"><img src="resources/images/color-3.webp" width="30,93" height="60" alt="Розовый"></button>
+            <button class="button square-imgae"><img src="resources/images/color-4.webp" width="30,93" height="60" alt="Голубой"></button>
+            <button class="button square-imgae"><img src="resources/images/color-5.webp" width="30,93" height="60" alt="Белый"></button>
           </div>
         </div>
-        <div class="configuration_rom"> <!-- Основной контейнер конфигурация памяти -->
-            <div class="configuration__text">
+        
+        <div class="configuration"> <!-- Основной контейнер конфигурация памяти -->
+            <div class="configuration__title">
             <h3>Конфигурация памяти: 128 ГБ</h3>
             </div>
           <div class="configuration_button__list">
-            <button class="configuration__button">
+            <button class="button configuration__button">
               <span class="configuration__main_text">128 ГБ
               </span>
             </button>
-            <button class="configuration__button">
+            <button class="button configuration__button">
               <span class="configuration__main_text">
                 256 ГБ
               </span>
             </button>
-            <button class="configuration__button">
+            <button class="button configuration__button">
               <span class="configuration__main_text">
                 512 ГБ
               </span>
             </button>
           </div>
         </div>
-        <div class="product_characteristics"><!--Начало контейнера характеристик-->
-                <div class="product_characteristics__title">
-                <h3>Характеристики товара</h3>
-                </div>
-                <ul class="product_characteristics__list_element">
-                        <li class="product_characteristics__list_element_text">
-                        Экран: <b>6.1</b>
-                        </li>
-                        <li class="product_characteristics__list_element_text">
-                        Встроенная память: <b>128 ГБ</b>
-                        </li>
-                        <li class="product_characteristics__list_element_text">
-                        Операционная система: <b>iOS 15</b>
-                        </li>
-                        <li class="product_characteristics__list_element_text">
-                        Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b>
-                        </li>
-                        <li class="product_characteristics__list_element_text">
-                        Процессор: <b><a href="https://ru.wikipedia.org/wiki/Apple_A15">Apple A15 Bionic</a></b>
-                        </li>
-                        <li class="product_characteristics__list_element_text">
-                        Вес: <b>173 г</b>
-                        </li>
-                </ul>
-        </div><!--Граница контейнера-->
+        
+<div class="product-characteristics"><!--Начало контейнера характеристик-->
+  <div class="product-characteristics__title">
+  <h3>Характеристики товара</h3>
+</div>
+<ul class="product-characteristics__list">
+  <li class="product-characteristics__element">Экран: <b>6.1</b></li>
+  <li class="product-characteristics__element">Встроенная память: <b>128 ГБ</b></li>
+  <li class="product-characteristics__element">Операционная система: <b>iOS 15</b></li>
+  <li class="product-characteristics__element">Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b></li>
+  <li class="product-characteristics__element">Процессор: <b><a class="link" href="https://ru.wikipedia.org/wiki/Apple_A15">Apple A15 Bionic</a></b></li>
+  <li class="product-characteristics__element">Вес: <b>173 г</b></li>
+</ul>
+</div><!--Граница контейнера-->
         
     <div class="description"> <!--Начало контейнера описание-->
-      <div class="description__text">
+      <div class="description__title">
         <h3>Описание</h3>
       </div>
       <div class="description__paragraphlist">
@@ -109,75 +98,61 @@
             <br>Аккумулятор держится заметно дольше.
             <br><i>iPhone 13 - сильный мира всего.</i>
         </div>
-          <div class="product_description__section">Мы разработали совершенно новую схему расположения и развернули объективы на 45 градусов. Благодаря этому внутри корпуса поместилась наша лучшая система двух камер с увеличенной матрицей широкоугольной камеры. Кроме того, мы освободили место для системы оптической стабилизации изображения сдвигом матрицы. И повысили скорость работы матрицы на сверхширокоугольной камере.</div>
-          <div class="product_description__section">Новая сверхширокоугольная камера видит больше деталей в тёмных областях снимков. Новая широкоугольная камера улавливает на 47% больше света для более качественных фотографий и видео. Новая оптическая стабилизация со сдвигом матрицы обеспечит чёткие кадры даже в неустойчивом положении.</div>
-          <div class="product_description__section">Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения фокуса и изменения резкости. Просто начните запись видео. Режим «Киноэффект» будет удерживать фокус на объекте съёмки, создавая красивый эффект размытия вокруг него. Режим «Киноэффект» распознаёт, когда нужно перевести фокус на другого человека или объект, который появился в кадре. Теперь ваши видео будут смотреться как настоящее кино.</div>
+          <div class="description__item">Мы разработали совершенно новую схему расположения и развернули объективы на 45 градусов. Благодаря этому внутри корпуса поместилась наша лучшая система двух камер с увеличенной матрицей широкоугольной камеры. Кроме того, мы освободили место для системы оптической стабилизации изображения сдвигом матрицы. И повысили скорость работы матрицы на сверхширокоугольной камере.</div>
+          <div class="description__item">Новая сверхширокоугольная камера видит больше деталей в тёмных областях снимков. Новая широкоугольная камера улавливает на 47% больше света для более качественных фотографий и видео. Новая оптическая стабилизация со сдвигом матрицы обеспечит чёткие кадры даже в неустойчивом положении.</div>
+          <div class="description__item">Режим «Киноэффект» автоматически добавляет великолепные эффекты перемещения фокуса и изменения резкости. Просто начните запись видео. Режим «Киноэффект» будет удерживать фокус на объекте съёмки, создавая красивый эффект размытия вокруг него. Режим «Киноэффект» распознаёт, когда нужно перевести фокус на другого человека или объект, который появился в кадре. Теперь ваши видео будут смотреться как настоящее кино.</div>
       </div>
       </div> <!--Конец контейнера описание-->
       </div>
-      <div class="sidebar1"> <!--Начало сайдбара-->
 
-        <div class="sidebar">
-
-      <div class="price">
-        
-        <div class="old_price">
-        
-          <s class="old_price__text">75 990₽</s>
-          <div class="old_price__sale"> <div class="old_price__saletext"> -8% </div> </div>
-
+      <div class="sidebar"> <!--Начало сайдбара-->
+        <div class="sidebar__wrapper">
+          <div class="sidebar__price">
+            <div class="sidebar__oldprice">
+              <s class="sidebar__text">75 990₽</s>
+              <div class="sidebar__sale"><div class="sidebar__saletext"> -8% </div></div>
+            </div>
+          </div>
+          <div class="sidebar__newprice">67 990₽</div>
+          <div class="sidebar__delivery">
+            <div class="sidebar__delivery-date">Самовывоз в четверг, 1 сентября — <b>бесплатно</b></div>
+            <div class="sidebar__delivery-date">Курьером в четверг, 1 сентября — <b>бесплатно</b></div>
+          </div>
+          <button class="button button-backet"><span class="button-backet__add">Добавить в корзину</span></button>
         </div>
 
-      </div>
-
-
-          <div class="price2__text">67 990₽</div>
-
-          
-          <div class="delivery_container">
-
-          <div class="delivery">Самовывоз в четверг, 1 сентября — <b>бесплатно</b></div>
-
-          <div class="delivery">Курьером в четверг, 1 сентября — <b>бесплатно</b></div>
-
-          </div>
-
-        <button class="button_backet">
-          <span class="button_backet__add">Добавить в корзину</span>
-        </button>
-      </div>
         <div class="ads"> <!--Контейнер с рекламой-->
-      <div class="ads__left_corner">Реклама</div>
-      <div class="ads__list">
-      <iframe src="./ads.html" height="400" width="400"></iframe>
-      <iframe src="./ads.html" height="400" width="400"></iframe>
-      </div>
-    </div> <!--Граница контейнера с рекламой-->
-  </div> <!--Конец сайдбара-->
-    </div>
+          <div class="ads__item">Реклама</div>
+          <div class="ads__list">
+            <iframe class="ads__element" src="./ads.html" height="400" width="400"></iframe>
+            <iframe class="ads__element" src="./ads.html" height="400" width="400"></iframe>
+          </div>
+        </div> <!--Граница контейнера с рекламой-->
+      </div> <!--Конец сайдбара-->
+    </div> <!--Граница контейнера [характеристик]-->
   
 <!--Здесь сравнение моделей-->
 
   </main>
-<div class="review_block"> <!-- Основной контейнер с отзывами-->
+<div class="review-section"> <!-- Основной контейнер с отзывами-->
 
-  <div class="review__title"> <!-- Контейнер с заголовком-->
-  <div class="review_text_number"> <!-- Текст-->
-    <span class="review__text">Отзывы</span>
-    <span class="review__number">425</span>
+  <div class="review-section__header"> <!-- Контейнер с заголовком-->
+  <div class="review-section__wrapper"> <!-- Текст-->
+    <span class="review-section__title">Отзывы</span>
+    <span class="review-section__count">425</span>
   </div>
-  <button class="review__btn"> <span class="review__add">Добавить отзыв</span></button>
+  <button class="button review__btn"> <span class="review__add">Добавить отзыв</span></button>
   </div>
 
-<div class="review_list"> <!--Контейнер с отзывами-->
+<div class="review-section__list"> <!--Контейнер с отзывами-->
 
-  <div class="review_first">
+  <div class="review">
     <img class="review__photo" src="resources/images/review-1.jpeg" height="200" alt="Фото">
-    <div class="review__content">
-      <div class="review__head">
+    <div class="review__wrapper">
+      <div class="review__header">
         <div class="review_username">Марк Г.</div>
         
-        <div class="review_estimation">
+        <div class="review_rating">
           <div class="full-stars">
             <div class="rating-group">
                 <!-- по умолчанию 0 -->
@@ -217,26 +192,26 @@
         </div>
 
       </div>
-      <div class="review__information">
-      <div class="review__text_information1"> <b>Опыт использования:</b> менее месяца</div>
-      <div class="review__text_information2"><b>Достоинства:</b><br>
+      <div class="review__main">
+      <div class="review__experience"> <b>Опыт использования:</b> менее месяца</div>
+      <div class="review__advantages"><b>Достоинства:</b><br>
         это мой первый айфон после после огромного количества телефонов на андроиде. всёплавно, чётко и красиво. довольно шустрое устройство. камера весьма неплохая,ширик тоже на высоте</div>
-      <div class="review__text_information3"><b>Недостатки:</b><br>
+      <div class="review__disadvantages"><b>Недостатки:</b><br>
         к самому устройству мало имеет отношение, но перенос данных с андроида - адскаявещь) а если нужно переносить фото с компа, то это только через itunes, которыйурезает качество фотографий исходное</div>
       </div>
     </div>
   </div>
 
   <div>
-    <div class="hr"></div>
+    <div class="reviews__separator"><hr></div>
   </div>
-<div class="review_second"> <!--Второй отзыв-->
+<div class="review"> <!--Второй отзыв-->
 
   <img class="review__photo" src="resources/images/review-2.jpeg" height="200" alt="Фото">
-  <div class="review__content2">
-    <div class="review__head2">
+  <div class="review__wrapper">
+    <div class="review__header">
       <div class="review_username"><b>Валерий Коваленко</b></div>
-      <div class="review_estimation">
+      <div class="review_rating">
         <div class="full-stars">
           <div class="rating-group">
               <!-- по умолчанию 0 -->
@@ -275,25 +250,25 @@
       </div>
       </div>
     </div>
-    <div class="review_informaiton_second">
-      <div class="review__text_information1"><b>Опыт использования:</b> менее месяца</div>
-      <div class="review__text_information2"><b>Достоинства:</b><br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго</div>
-      <div class="review__text_information3"><b>Недостатки:</b><br>Плохая ремонтопригодность</div>
+    <div class="review__main">
+      <div class="review__experience"><b>Опыт использования:</b> менее месяца</div>
+      <div class="review__advantages"><b>Достоинства:</b><br>OLED экран, Дизайн, Система камер, Шустрый А15, Заряд держит долго</div>
+      <div class="review__disadvantages"><b>Недостатки:</b><br>Плохая ремонтопригодность</div>
     </div>
   </div>
 </div> <!--Граница второго отзыва-->
     </div>
   </div> <!--Граница контейнера с отзывами-->
 
-  <footer class="footer_container">
-    <div class="footer_container2">
+  <footer class="footer">
+    <div class="footer__wrapper">
   <div>
-      <div class="footer">
+      <div class="footer__info">
         <span>© ООО «<span class="color_text">Мой</span>Маркет», 2018-2022.</span>
       </div>
-  <div class="footer__information">
-    <span>Для уточнения информации звоните по номеру <a href="tel:+79000000000">+7 900 000 0000</a>, <br>
-    а предложения по сотрудничеству отправляйте на почту <a href="mailto:partner@mymarket.com">partner@mymarket.com</a></span>
+  <div class="footer__info2">
+    <span>Для уточнения информации звоните по номеру <a class="link" href="tel:+79000000000">+7 900 000 0000</a>, <br>
+    а предложения по сотрудничеству отправляйте на почту <a class="link" href="mailto:partner@mymarket.com">partner@mymarket.com</a></span>
   </div>
 </div>
     <div class="footer__up"><span><a href="#top">Наверх</a></span></div>
