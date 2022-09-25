@@ -3,10 +3,34 @@ body {
     height: 100vh;
 }
 
-div {
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #eee;
+    background: #F0F0F0;
     height: 100%;
+}
+
+.main__paragraph {
+    width: 249px;
+    height: 17px;
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    
+    /* Dark gray */
+    
+    color: #888888;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
