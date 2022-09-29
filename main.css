@@ -10,7 +10,13 @@
     height: 2985px;
     
     background: #F8FAFE;
+}
 
+@media (max-width: 1024px) {
+.body {
+    width: 1024px;
+    height: 2761px; 
+    }
 }
 
 .link {
@@ -62,6 +68,12 @@
     top: 91px;
 }
 
+@media (max-width: 1024px) {
+.breadcrumbs{
+left: 15px;
+}
+}
+
 .breadcrumbs__text {
     font-family: "Inter";
     font-style: normal;
@@ -101,6 +113,16 @@
     top: 612px;
 }
 
+@media (max-width: 1024px) {
+    .characterics {
+        gap: 40px;
+        width: 994px;
+        height: 991px;
+        left: 15px;
+        top: 497px;
+    }
+}
+
 .characterics__main {  /*Характеристики*/
     display: flex;
     flex-direction: column;
@@ -115,6 +137,14 @@
     order: 0;
     flex-grow: 1;
 }
+
+@media (max-width: 1024px) {
+    .characterics__main {
+        width: 594px;
+        height: 991px;
+    }
+}
+
 
 .characterics__color { /*Цвет товара*/
     flex: none;
@@ -778,6 +808,14 @@
     top: 195px;
 }
 
+@media (max-width: 1024px) {
+.images {
+    width: 993.64px;
+    height: 272px;
+    left: 15px;
+}
+}
+
 .images__phone1 {
     width: 304.33px;
     height: 387px;
@@ -786,6 +824,13 @@
     order: 0;
     flex-grow: 0;
 }
+
+@media (max-width: 1024px) {
+    .images__phone1 {
+        width: 213.89px;
+        height: 272px;        
+    }
+    }
 
 .images__phone2 {
     width: 192.73px;
@@ -797,15 +842,28 @@
 
 }
 
+@media (max-width: 1024px) {
+    .images__phone2 {
+        width: 135.46px;
+        height: 272px;      
+    }
+    }
+
 .images__phone3 {
     width: 199.06px;
     height: 387px; 
 
     flex: none;
     order: 2;
-    flex-grow: 0;
-    
+    flex-grow: 0;   
 }
+
+@media (max-width: 1024px) {
+    .images__phone3 {
+        width: 139.91px;
+        height: 272px;    
+    }
+    }
 
 .images__phone4 {
     width: 361.5px;
@@ -814,8 +872,14 @@
     flex: none;
     order: 3;
     flex-grow: 0;
-    
 }
+
+@media (max-width: 1024px) {
+    .images__phone4 {
+        width: 254.07px;
+        height: 272px;
+    }
+    }
 
 .images__phone5 {
     width: 299.22px;
@@ -824,8 +888,14 @@
     flex: none;
     order: 4;
     flex-grow: 0;
-    
 }
+
+@media (max-width: 1024px) {
+    .images__phone5 {
+        width: 210.3px;
+        height: 272px;
+    }
+    }
 
 .title {
     display: flex;
@@ -838,6 +908,12 @@
     height: 59px;
     left: 50px;
     top: 126px;   
+}
+
+@media (max-width: 1024px) {
+.title {
+    left: 15px;
+}
 }
 
 .title__item {
@@ -871,6 +947,22 @@
     top: 1px;
 }
 
+@media (max-width: 1024px) {
+.header-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 15px;
+    gap: 10px;
+
+    position: absolute;
+    width: 1024px;
+    height: 80px;
+    left: 0px;
+    top: 1px;
+    }
+}
+
 .header-box__main {
     width: 1398px;
     height: 80px;
@@ -878,6 +970,17 @@
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+@media (max-width: 1024px) {
+.header-box__main {
+    width: 994px;
+    height: 80px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    }
 }
 
 .logo {
@@ -888,12 +991,32 @@
     top: 18.5px;
 }
 
+@media (max-width: 1024px) {
+.logo {
+    position: absolute;
+    width: 38.68px;
+    height: 43px;
+    left: 15px;
+    top: 18.5px;    
+}
+}
+
 .header-box__text {
     position: absolute;
     width: 1351.5px;
     height: 80px;
     left: 97.5px;
     top: 0px;
+}
+
+@media (max-width: 1024px) {
+.header-box__text {
+    position: absolute;
+    width: 944.65px;
+    height: 80px;
+    left: 64.35px;
+    top: 0px;    
+}
 }
 
 .text_main {
