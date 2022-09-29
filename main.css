@@ -1,0 +1,37 @@
+body {
+    color:black;
+    font-size: 18px;
+    max-width: 1500px;  
+    font-family: sans-serif;
+    margin: 0 auto;
+
+}
+
+   A {
+    color: #018ad2; /* Цвет ссылок */
+   }
+
+   A:hover {
+    color: #c00; /* Цвет ссылок */
+   }
+
+button {
+padding: 8px 12px;
+}
+
+p {
+    margin: 16px;
+}
+
+ul {
+margin-left: -20px;
+}
+
+iframe {
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #ccc;
+}
+
+
+
