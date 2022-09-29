@@ -2,12 +2,12 @@
     color:black;
     font-size: 18px;
     max-width: 1500px;  
-    font-family: sans-serif;
+    font-family: "Inter";
     margin: 0 auto;
 
     position: relative;
     width: 1500px;
-    height: 2519px;
+    height: 2985px;
     
     background: #F8FAFE;
 
@@ -25,8 +25,6 @@
 .ads__element {
     box-sizing: border-box;
 
-    /* Auto layout */
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,11 +36,8 @@
     height: 300px;
     
     background: #F0F0F0;
-    /* Dark gray */
-    
+
     border: 1px dashed #888888;
-    
-    /* Inside auto layout */
     
     flex: none;
     order: 1;
@@ -58,7 +53,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 8px 0px;
     gap: 4px;
     
     position: absolute;
@@ -69,7 +63,7 @@
 }
 
 .breadcrumbs__text {
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -119,7 +113,7 @@
 
     flex: none;
     order: 0;
-    flex-grow: 1;   
+    flex-grow: 1;
 }
 
 .characterics__color { /*Цвет товара*/
@@ -132,7 +126,7 @@
 
     margin: 0;
     margin-bottom: 15px; /* Задает отступ 15 px*/
-    font-family: sans-serif; /* Шрифт */
+    font-family: "Inter"; /* Шрифт */
     font-size: 16px; /* Размер шрифта, указанного в макете */
     font-weight: 700;  /* Выравнивание по вертикали */
     line-height: 19px; /* Выравнивание по горизонтали */
@@ -185,7 +179,7 @@
     left: 0px;
     top: 144px;
     
-    font-family:sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -194,32 +188,59 @@
     color: #000000;
 }
 
-.configuration_button__list {
+.configuration-button__list {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 10px;
-
+    
     position: absolute;
     width: 298px;
     height: 39px;
     left: 0px;
     top: 178px;
+    
 
 }
 
 .configuration__button {
-    background-color: #FFFFFF;
-
     box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 10px 20px;
     gap: 10px;
+    
+    width: 92px;
+    height: 39px;
 
+    border-radius: 4px;
 }
+
+.configuration__button2 {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+    
+    width: 94px;
+    height: 39px;    
+
+    border-radius: 4px;
+}
+
+
 
 .configuration__button:hover {
     background: #F2F2F2;
@@ -231,12 +252,19 @@
     border: 1px solid #F36223;
 }
 
-.configuration__main_text {
-    font-family: sans-serif;
+
+.configuration__main-text {
+    width: 52px;
+    height: 19px;
+    
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    
+    color: #000000;
+
     white-space: nowrap;
 }
 
@@ -255,7 +283,7 @@
     left: 0px;
     top: 247px;
     
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -277,7 +305,7 @@
     width: 417px;
     height: 164px;
     left: 0px;
-    top: 270px;
+    top: 263px;
     list-style-position: inside;
 
 
@@ -295,7 +323,7 @@
 }
 
 .product-characteristics__element {
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -308,6 +336,12 @@
 }
 
 .description { /*Контейнер описание*/
+    width: 880px;
+    height: 421px;
+    
+    
+    /* Inside auto layout */
+    
     flex: none;
     order: 3;
     align-self: stretch;
@@ -315,12 +349,13 @@
 }
 
 .description__title {  /*Описание*/
+    position: absolute;
     width: 181.59px;
     height: 19px;
     left: 0px;
     top: 475px;
 
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -334,16 +369,22 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+    padding: 0px;
     gap: 15px;
-
+    
+    position: absolute;
+    width: 880px;
+    height: 387px;
     left: 0px;
     top: 509px;
+    
 }
 
 .description__paragraph {
-    
-    font-family: sans-serif;
+    width: 382px;
+    height: 95px;
+
+    font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -356,14 +397,51 @@
     flex-grow: 0;
 }
 
-.description__item {
+.description__item1 {
+    width: 880px;
+    height: 76px;
 
-    font-family: sans-serif;
+        font-family: "Inter";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
+
+.description__item2 {
+
+        font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.description__item3 {
+
+        font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+
 
 .ads {
     display: flex;
@@ -373,20 +451,21 @@
     gap: 10px;
     
     width: 420px;
-    height: 957px;
+    height: 642px;
     
     
     /* Inside auto layout */
     
     flex: none;
     order: 1;
+    align-self: stretch;
     flex-grow: 0;
-
 }
+
 
 .ads__item {
     
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -421,11 +500,9 @@
     flex-grow: 0;
 }
 
-.sidebar__wrapper {
+.important {
     box-sizing: border-box;
 
-    /* Auto layout */
-    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -435,15 +512,18 @@
     width: 420px;
     height: 275px;
     
-    /* White */
-    
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
-.sidebar__price {
+.important__price {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -452,9 +532,13 @@
     
     width: 132px;
     height: 73px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.sidebar__oldprice {
+.important__oldprice {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -463,22 +547,33 @@
     
     width: 123px;
     height: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.sidebar__text {
+.important__text {
+    width: 66px;
+    height: 16px;
     
-    font-family: sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
 
     text-decoration-line: line-through;
+    
 
     color: #888888;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.sidebar__sale {
+.important__sale {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -490,76 +585,107 @@
     border-radius: 500px;
 }
 
-.sidebar__saletext {
+.important__saletext {
+    width: 31px;
+    height: 16px;
     
-    font-family: sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
- 
+
     color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.sidebar__newprice {    
+.important__newprice {    
     width: 132px;
     height: 39px;
     
-    font-family: sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 39px;
+
+    color: #000000;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
 }
 
-.sidebar__delivery {
+.important__delivery {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 0px 0px 20px;
     gap: 10px;
-    
-    width: 380px;
-    height: 68px;
+
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
-.sidebar__delivery-date {
-    width: 380px;
-    height: 19px;
+.important__delivery-date {
+
     
-    font-family: sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .button-backet {
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 92px;
+    padding: 20px 90px;
     gap: 10px;
     
     width: 380px;
     height: 64px;
 
     background: #F36223;
+    border-radius: 4px;
 
-    border: solid 0px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
 }
 
 .button-backet__add {
     width: 196px;
     height: 24px;
     
-    font-family: sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     
     color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    text-align: center;
 }
 
 .button-backet:hover {
@@ -585,7 +711,7 @@
     width: 265px;
     height: 29px;
     
-    font-family: sans-serif;
+        font-family: "Inter";
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -625,7 +751,7 @@
     width: 251px;
     height: 19px;
     
-    font-family: sans-serif;
+        font-family: "Inter";
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -638,15 +764,13 @@
     flex-grow: 0;
 }
 
-
-
 .images {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 10px;
-
+    
     position: absolute;
     width: 1396.83px;
     height: 387px;
@@ -657,54 +781,83 @@
 .images__phone1 {
     width: 304.33px;
     height: 387px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .images__phone2 {
     width: 192.73px;
     height: 387px; 
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
 }
 
 .images__phone3 {
     width: 199.06px;
     height: 387px; 
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    
 }
 
 .images__phone4 {
     width: 361.5px;
     height: 387px;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    
 }
 
 .images__phone5 {
     width: 299.22px;
     height: 387px;
+
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    
 }
 
 .title {
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding: 0px 0px 20px;
     gap: 10px;
-
+    
     position: absolute;
     width: 539px;
     height: 59px;
     left: 50px;
-    top: 126px;    
+    top: 126px;   
 }
 
 .title__item {
     width: 539px;
     height: 39px;
     
-    font-family: sans-serif;
+        font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
+
+    color: #000000;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
-.header {
+.header-box {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -715,13 +868,13 @@
     width: 1500px;
     height: 80px;
     left: 0px;
-    top: 1px;    
+    top: 1px;
 }
 
-.header__main {
+.header-box__main {
     width: 1398px;
     height: 80px;
-
+    
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -732,25 +885,25 @@
     width: 36.5px;
     height: 43px;
     left: 51px;
-    top: 30px    
+    top: 18.5px;
 }
 
-.header_text {
+.header-box__text {
     position: absolute;
     width: 1351.5px;
     height: 80px;
     left: 97.5px;
-    top: 0px;    
+    top: 0px;
 }
 
-.header_text_main {
+.text_main {
     position: absolute;
     width: 263px;
     height: 53px;
-    left: 10px;
-    top: 30px;
+    left: -3px;
+    top: 18px;
     
-    font-family: sans-serif;
+        font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 44px;
@@ -773,7 +926,7 @@
 
 .table__title {
 
-    font-family: sans-serif;
+        font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -803,14 +956,21 @@
     
     width: 876px;
     height: 190px;
-
+    
+    
+    /* Inside auto layout */
+    
     flex: none;
     order: 4;
     flex-grow: 0;
+    white-space: nowrap
 }
 
 .models__title {
-    font-family: sans-serif;
+    width: 164px;
+    height: 19px;
+
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -826,7 +986,7 @@
 
 .models__table {
     box-sizing: border-box;
-
+    
     flex-direction: row;
     align-items: flex-start;
     padding: 0px;
@@ -840,6 +1000,7 @@
     order: 1;
     flex-grow: 0;
     border-collapse: collapse
+
 }
 
 .models__head {
@@ -859,18 +1020,12 @@
 
 
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     padding: 10px;
     
     width: 94px;
     height: 39px;
-
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .models__weight {
@@ -878,7 +1033,7 @@
     box-sizing: border-box;
 
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     padding: 10px;
     
@@ -896,7 +1051,7 @@
     box-sizing: border-box;
 
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     padding: 10px;
     
@@ -915,7 +1070,7 @@
     box-sizing: border-box;
 
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     padding: 10px;
     
@@ -1003,11 +1158,18 @@
     flex-grow: 0;
 }
 
+.models__cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
 .models__table1 {
     display: flex;
     text-align: center;
 
-    font-family: sans-serif;
+        font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1021,7 +1183,7 @@
     text-align: center;
 
     
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1036,7 +1198,7 @@
     text-align: center;
 
     
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1063,10 +1225,9 @@
     
     position: absolute;
     width: 880px;
-    height: 574px;
+    height: 564px;
     left: 50px;
     top: 1778px;
-    
 }
 
 .models__border {
@@ -1104,7 +1265,7 @@
 
 .review-section__title {
 
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1115,7 +1276,7 @@
 
 .review-section__count {
 
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1154,38 +1315,6 @@
     fill: #888888;
 }
 
-.review__btn {
-    box-sizing: border-box;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0px 20px;
-    gap: 10px;
-    
-    width: 168px;
-    height: 39px;
-}
-
-.review__btn:hover {
-    background:#F0F0F0;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-.review__add {
-    width: 128px;
-    height: 19px;
-    
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    
-    color: #000000;
-}
-
 .review-section__list {
     display: flex;
     flex-direction: column;
@@ -1205,7 +1334,7 @@
     border-radius: 100px;
 }
 
-.review {
+.review1 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1214,6 +1343,18 @@
 
     flex: none;
     order: 0;
+    flex-grow: 0;
+}
+
+.review2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    flex: none;
+    order: 2;
     flex-grow: 0;
 }
 
@@ -1235,7 +1376,7 @@
 
 .review_username {
 
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1264,7 +1405,7 @@
 
 .review__experience {
     
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1276,7 +1417,7 @@
 .review__advantages {
  
 
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1288,7 +1429,7 @@
 .review__disadvantages {
 
     
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1299,14 +1440,40 @@
 }
 
 .reviews__separator {
-
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 0px 170px;
+    
     width: 880px;
     height: 1px;
     
     flex: none;
     order: 1;
-    align-self: stretch;
+    flex-grow: 0;
+}
+
+.separator {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px 0px 170px;
+    
+    width: 710px;
+    height: 1px;
+    
+    /* Dark gray */
+    
+    border: 1px dashed #888888;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
     flex-grow: 0;
 }
 
@@ -1319,6 +1486,254 @@
 
 }
 
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 0px 170px;
+    gap: 15px;
+    
+    position: absolute;
+    width: 880px;
+    height: 372px;
+    left: 50px;
+    top: 2402px;    
+}
+
+.form__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    
+    width: 710px;
+    height: 338px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.form__name {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    
+    width: 495px;
+    height: 49px;
+    
+    /* Dark gray */
+    
+    border: 1px solid #888888;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.form__text {
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    /* Dark gray */
+    
+    color: #888888;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form__rating {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    
+    width: 175px;
+    height: 49px;
+    
+    /* Dark gray */
+    
+    border: 1px solid #888888;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.form__review {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+    
+    width: 710px;
+    height: 190px;
+    
+    /* Dark gray */
+    
+    border: 1px solid #888888;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    resize: none;
+}
+
+.form__first-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 710px;
+    height: 49px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.form__second-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 710px;
+    height: 190px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.form__third-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    
+    width: 710px;
+    height: 39px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.form__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px;
+    gap: 10px;
+    
+    width: 177px;
+    height: 39px;
+    
+    /* Carrot */
+    
+    background: #F36223;
+    border-radius: 4px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form__button-text {
+    width: 137px;
+    height: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    /* White */
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form__title {
+    width: 174px;
+    height: 19px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #000000;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -1329,7 +1744,7 @@
     width: 1500px;
     height: 111px;
     left: 0px;
-    top: 2412px;
+    top: 2874px;
     
     /* Light gray */
     
@@ -1355,7 +1770,7 @@
     width: 558px;
     height: 51px;
     
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -1375,7 +1790,7 @@
     width: 558px;
     height: 51px;
     
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1393,7 +1808,7 @@
 
 .footer__up {
 
-    font-family: sans-serif;
+    font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1403,3 +1818,11 @@
 
     align-items: center;
 }
+
+
+
+@font-face {
+	font-family: 'Inter'; 
+	src: url(/fonts/font.ttf); 
+}
+ 
