@@ -203,7 +203,7 @@ left: 15px;
     background: #F2F2F2;;
     cursor: pointer;
 }
-.square-imgae:focus {
+.square-imgae__selected {
     border: 2px solid #F36223;
 }
 
@@ -289,12 +289,7 @@ left: 15px;
     cursor: pointer;
 }
 
-.configuration__button:focus {
-    outline: 1px solid #F36223;
-    border: 1px solid #F36223;
-}
-
-.configuration__button2:focus {
+.configuration-btn__selected {
     outline: 1px solid #F36223;
     border: 1px solid #F36223;
 }
@@ -1875,7 +1870,6 @@ left: 15px;
     .form__name {
         width: 379px;
     }
-    
 }
 
 .form__text {
