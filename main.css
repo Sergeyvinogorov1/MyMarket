@@ -203,13 +203,14 @@ left: 15px;
     height: 80px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    align-items: center; /* Выравнивание по высоте (центр) */
+    justify-content: center; /* Выравнивание по ширине (центр) */
     padding: 0px;
     gap: 10px;
     border: 1px solid #888888;
     border-radius: 4px;
     box-sizing: border-box;
+
     
 }
 
@@ -228,6 +229,10 @@ left: 15px;
 
 .square-imgae:active {
     border: 2px solid #A93A09;
+}
+
+.square-imgae-1 {
+
 }
 
 .configuration {
@@ -1252,7 +1257,7 @@ left: 15px;
     position: absolute;
     width: 1351.5px;
     height: 80px;
-    left: 97.5px;
+    left: 93.5px;
     top: 0px;
 }
 
