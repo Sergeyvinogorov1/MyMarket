@@ -1884,7 +1884,7 @@ left: 15px;
 }
 
 @media (max-width: 1024px) {
-    .review__photo {
+    .review-photo {
         width: 100px;
         height: 100px;
     }
@@ -1905,7 +1905,7 @@ left: 15px;
 
 @media (max-width: 1024px)
 {
-    .review__first{
+    .review-first{
         width: 594px;
         height: 281px;
     }
@@ -1941,6 +1941,7 @@ left: 15px;
     gap: 20px;
 }
 
+
 .review-header {
     display: flex;
     flex-direction: column;
@@ -1948,6 +1949,7 @@ left: 15px;
     padding: 0px;
     gap: 10px;
 }
+
 
 .review-username {
 
