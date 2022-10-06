@@ -1385,6 +1385,7 @@ left: 15px;
 
 @media (max-width: 1024px) {
     .cart {
+        box-sizing: border-box;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1417,7 +1418,26 @@ left: 15px;
     line-height: 12px;
     
     color: #081658;
+}
+
+@media (max-width: 1024px) {
+    .icon-text {
     
+        position: absolute;
+        width: 7px;
+        height: 12px;
+        left: 2.5px;
+        top: 0px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 12px;
+        
+        color: #081658;
+        
+    }
 }
 
 .icon-heart {
@@ -1444,6 +1464,22 @@ left: 15px;
     left: 0px;
     top: 0px;
 }
+
+@media (max-width: 1024px) {
+    .icon-cart {
+        content: "";
+
+        background-image: url(./resources/cart2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 41px;
+        height: 41.09px;
+        left: 0px;
+        top: 0px;
+    }
+    
+}
+
 
 .table {
     display: flex;
