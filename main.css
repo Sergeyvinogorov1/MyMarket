@@ -213,8 +213,6 @@ left: 15px;
     border: 1px solid #888888;
     border-radius: 4px;
     box-sizing: border-box;
-
-    
 }
 
 .square-imgae:hover {
@@ -232,10 +230,6 @@ left: 15px;
 
 .square-imgae:active {
     border: 2px solid #A93A09;
-}
-
-.square-imgae-1 {
-
 }
 
 .configuration {
