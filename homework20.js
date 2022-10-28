@@ -44,7 +44,8 @@ if (month === 11) return "Декабрь"
 }
 
 for (let m = 0; m < 12; m++) {
-    const month = getNameOfMonth(0);
+    if (m === 9) continue;
+    const month = getNameOfMonth(m);
     console.log(month)
 }
 
