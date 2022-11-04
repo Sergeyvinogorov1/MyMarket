@@ -49,6 +49,8 @@ function getSumm(arr) {
 
   console.log("1", cart)
 
+// Удалили товар
+
   removeFromCart(4884)
 
   console.log("2", cart); // [4884, 3456]
