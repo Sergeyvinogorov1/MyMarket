@@ -32,8 +32,30 @@ const description = {
       newPrice: 67990,
       oldPrice: 75990,
       sale: 8,
-      allColors: ['red', 'grey', 'pink', 'blue', 'white', 'black'],
-      allConfiguration: [128, 256, 512],
+      squareImages: [
+        './resources/images/color-1.webp',
+        './resources/images/color-2.webp',
+        './resources/images/color-3.webp',
+        './resources/images/color-4.webp',
+        './resources/images/color-5.webp',
+        './resources/images/color-6.webp',
+      ],
+      Colors: ['red', 'grey', 'pink', 'blue', 'white', 'black'],
+      Configurations: [128, 256, 512],
+
+      importantDelivery: [
+        {
+          name: 'Самовывоз',
+          date: '01.09.2022',
+          coast: 0,
+        },
+        {
+          name: 'Курьером',
+          date: '01.09.2022',
+          coast: 0,
+        },
+      ],
+
     },
   };
   

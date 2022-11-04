@@ -24,14 +24,19 @@ console.log(isEmpty(object));
 
 // Упражнение 2
 
+/**
+ * Функция считает процент увеличения зп
+ * @param {string} percent Увеличивает размер зп на заданный процент
+ * @returns Возвращает зп после ее увеличения на определенный процент
+ */
+
 let salaries = {
     John: 100000,
     Ann: 160000,
     Pete: 130000,
 };
 
-
-let privet = +prompt('На' , '');
+let percent = +prompt('На сколько процентов увеличить зп' , '');
 function raiseSalary(percent) {
     for (let key in salaries) {
         salaries[key] = salaries[key] + (salaries[key] / 100) * percent;
@@ -41,4 +46,4 @@ function raiseSalary(percent) {
     }
     return salaries;
 }
-raiseSalary(privet);
+raiseSalary(percent);
