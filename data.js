@@ -32,6 +32,9 @@ const description = {
       newPrice: 67990,
       oldPrice: 75990,
       sale: 8,
+
+      // Упражнение 2 (homework-22)
+
       squareImages: [
         './resources/images/color-1.webp',
         './resources/images/color-2.webp',
