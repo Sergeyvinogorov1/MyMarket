@@ -5,7 +5,7 @@
   <title>test</title>
   <link rel="icon" href="resources/icon-0.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./main.css">
-  <script src="./homework23.js"></script>
+<script defer src="page-product.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="body"> <!--Разршение сайта-->
@@ -376,13 +376,16 @@
       <div class="form__title">Добавить свой отзыв</div>
       <div class="form__block">
 <div class="form__first-row">
-      <div>
+      <div class="namecheck">
         <label for="name" ></label>
-        <input placeholder="Имя и фамилия" type="text" class="form__name form__text" id="name" name="name" >
+        <input placeholder="Имя и фамилия" type="text" class="control form__name form__text" id="name" name="username" autocomplete="off">
+        <div class="name_error"><span class="error">Вы забыли указать имя и фамилию</span></div>
+        <div class="name_error2"><span class="error">Имя не может быть короче 2-х символов</span></div>
       </div>
-      <div>
-        <label for="rating" ></label>
-        <input placeholder="Оценка" type="number" class="form__rating form__text" id="rating" name="rating" min="1" max="5">
+      <div class="ratingcheck">
+        <label for="rating"></label>
+        <input placeholder="Оценка" type="number" class="control form__rating form__text" id="rating" name="ratingform" autocomplete="off">
+        <div class="rating_error"><span class="error__2">Оценка должна быть от 1 до 5</span></div>
       </div>
     </div>
       <div class="form__second-row">
