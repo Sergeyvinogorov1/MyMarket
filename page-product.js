@@ -1,9 +1,14 @@
+"use strict";
+
+// этот код работает в современном режиме
+
 // Объявление переменных
 
 let form = document.querySelector('.form');
 let usernameContainer = form.querySelector('.namecheck');
 let formRatingContainer = form.querySelector('.ratingcheck');
 
+let inputName - form.querySelector('.form__name ')
 
 let username = usernameContainer.querySelector('.control')
 let errorNameElem = usernameContainer.querySelector('.name_error')
