@@ -24,6 +24,8 @@ function handleSubmit(event) {
 event.preventDefault();
 console.log('Submit');
 
+localStorage.removeItem("formData")
+
 let name = username.value;
 let rating = +formRating.value;
 
@@ -102,12 +104,3 @@ if(LS.getItem('formData')) {
     }
 }
 
-function handleSubmit(event) {
-  event.preventDefault();
-
-  localStorage.removeItem("formData")
-
-  console.log("submit");
-}
-
-form.addEventListener("submit", handleSubmit);
