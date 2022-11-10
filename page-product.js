@@ -4,13 +4,12 @@
 
 // Объявление переменных
 
-let form = document.querySelector('.form');
+const form = document.querySelector('.form');
 let usernameContainer = form.querySelector('.namecheck');
 let formRatingContainer = form.querySelector('.ratingcheck');
 
-let inputName - form.querySelector('.form__name ')
+let username = usernameContainer.querySelector('.control');
 
-let username = usernameContainer.querySelector('.control')
 let errorNameElem = usernameContainer.querySelector('.name_error')
 let errorNameElem2 = usernameContainer.querySelector('.name_error2')
 
@@ -20,6 +19,8 @@ let errorRatingElem = formRatingContainer.querySelector('.rating_error')
 // Объявление функции для создания события
 
 function handleSubmit(event) {
+
+  // Чтобы страница не перезагружалась, добавим event.preventDefault();
 event.preventDefault();
 console.log('Submit');
 
@@ -66,12 +67,47 @@ if (rating < 1 || rating > 5) {
 
 if (errorRating) {
   errorRatingElem.innertext = errorRating;
-}
-
-
-}
+}}
 
 
 // Добавление события
 
 form.addEventListener('submit', handleSubmit);
+
+
+
+
+
+let formData = {};
+const LS = localStorage;
+
+// Получение данных
+
+form.addEventListener('input', function(event){
+    
+    formData[event.target.name] = event.target.value;
+    LS.setItem('formData', JSON.stringify(formData));
+    console.log(formData);
+})
+
+// Восстановление данных
+
+if(LS.getItem('formData')) {
+    formData = JSON.parse(LS.getItem('formData'));
+    console.log(form.elements);
+
+    // form.elements[name]
+    for (let key in formData){
+        form.elements[key].value = formData[key];
+    }
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  localStorage.removeItem("formData")
+
+  console.log("submit");
+}
+
+form.addEventListener("submit", handleSubmit);
