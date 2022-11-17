@@ -173,25 +173,3 @@ function cartInfoStorageInit() {
     addToCart.style.fontSize = '20px';
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
