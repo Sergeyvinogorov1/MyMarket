@@ -5,7 +5,7 @@
   <title>test</title>
   <link rel="icon" href="resources/icon-0.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./main.css">
-<script defer src="page-product.js"></script>
+<script defer src="page-product-oop.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="body"> <!--Разршение сайта-->
@@ -372,35 +372,57 @@
 
 
   
-  <form class="form">
-      <div class="form__title">Добавить свой отзыв</div>
-      <div class="form__block">
-<div class="form__first-row">
+  
+
+
+  <form id="add-comment-form" class="add-comment form">
+    <div class="form__title">Добавить свой отзыв</div>
+    <div class="form__block">
+
+    <div class="form__first-row">
       <div class="namecheck">
-        <label for="name"></label>
-        <input name="username" placeholder="Имя и фамилия" type="text" class="input control form__name form__text" autocomplete="off">
-        <div class="name_error"><span class="error">Вы забыли указать имя и фамилию</span></div>
-        <div class="name_error2"><span class="error">Имя не может быть короче 2-х символов</span></div>
+        <input
+          value=""
+          id="add-comment-name"
+          class="input control form__name form__text"
+          placeholder="Имя и фамилия"
+        />
+        <div id="name-validate" class="name_error hide"></div>
       </div>
       <div class="ratingcheck">
-        <label for="rating"></label>
-        <input name="ratingform" placeholder="Оценка" type="number" class="rating2 control form__rating form__text" autocomplete="off">
-        <div class="rating_error"><span class="error__2">Оценка должна быть от 1 до 5</span></div>
+        <input
+          id="add-comment-raiting"
+          class="rating2 control form__rating form__text"
+          placeholder="Оценка"
+          type="text"
+          max="5"
+          min="1"
+        />
+        <div id="raiting-validate" class="rating_error hide"></div>
       </div>
     </div>
-      <div class="form__second-row">
-        <div>
-        <label for="review"></label>
-        <textarea name="review2" placeholder="Текст отзыва" class="review12345 form__review form__text" autocomplete="off"></textarea>
-      </div>
-      </div>
-
-      <div class="form__third-row">
-<button class="btn form__button" type="submit"><span class="form__button-text">Отправить отзыв</span></button>
-      </div>
+    <div class="form__second-row">
+      <textarea
+        id="add-comment-text"
+        class="review12345 form__review form__text"
+        placeholder="Текст отзыва"
+      ></textarea>
+      <div id="text-validate" class="add-comment__validate"></div>
+    </div>
+    <div class="form__third-row">
+      
+   
+    <button
+      id="add-comment-btn"
+      type="button"
+      class="btn form__button"
+    ><span class="form__button-text">Отправить отзыв</span>
+    </button>
+  </div>
     </div>
   </form>
-  
+
+
 </main>
 
   <footer class="footer">
