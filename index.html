@@ -5,14 +5,14 @@
   <title>test</title>
   <link rel="icon" href="resources/icon-0.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./main.css">
-<script defer src="page-product-oop.js"></script>
+<script defer src="page-product.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="body"> <!--Разршение сайта-->
   <header class="header-box"> <!--Шапка сайта-->
     <div class="header-box__main">
       <div class=logo>
-        <img src="resources/icon-0.svg" width="36.5" height="43" alt="Логотип">
+        <img class="logo__size" src="resources/icon-0.svg" alt="Логотип">
       </div>
     
     <div class="header-box__text">
@@ -66,37 +66,37 @@
             <input id="radio-1" type="radio" name="color" class="radio">
             <div class="square-imgae">
                 <label for="radio-1"><img class="square-imgae-1"
-                        src="resources/images/color-1.webp" width="30,93" height="60" alt="red"> </label>
+                        src="resources/images/color-1.webp" alt="red"> </label>
             </div>
 
             <input id="radio-2" type="radio" name="color" class="radio">
             <div class="square-imgae ">
-                <label for="radio-2"><img class="square-imgae-1"
-                        src="resources/images/color-2.webp" width="44,45" height="60" alt="grey"> </label>
+                <label for="radio-2"><img class="square-imgae-2"
+                        src="resources/images/color-2.webp" alt="grey"> </label>
             </div>
 
             <input id="radio-3" type="radio" name="color" class="radio">
             <div class="square-imgae">
                 <label for="radio-3"> <img class="square-imgae-1"
-                        src="resources/images/color-3.webp" width="30,93" height="60" alt="pink"> </label>
+                        src="resources/images/color-3.webp" alt="pink"> </label>
             </div>
 
             <input id="radio-4" type="radio" name="color" class="radio">
             <div class="square-imgae square-imgae--selected">
                 <label for="radio-4"><img class="square-imgae-1"
-                        src="resources/images/color-4.webp" width="30,93" height="60" alt="blue"> </label>
+                        src="resources/images/color-4.webp" alt="blue"> </label>
             </div>
 
             <input id="radio-5" type="radio" name="color" class="radio">
             <div class="square-imgae">
                 <label for="radio-4"><img class="square-imgae-1"
-                        src="resources/images/color-5.webp" width="30,93" height="60" alt="white"> </label>
+                        src="resources/images/color-5.webp" alt="white"> </label>
             </div>
 
             <input id="radio-6" type="radio" name="color" class="radio">
             <div class="square-imgae">
                 <label for="radio-5"><img class="square-imgae-1"
-                        src="resources/images/color-6.webp" width="30,93" height="60" alt="black"> </label>
+                        src="resources/images/color-6.webp" alt="black"> </label>
             </div>
         </div>
 
@@ -375,52 +375,34 @@
   
 
 
-  <form id="add-comment-form" class="add-comment form">
+  <form class="form">
     <div class="form__title">Добавить свой отзыв</div>
     <div class="form__block">
-
-    <div class="form__first-row">
-      <div class="namecheck">
-        <input
-          value=""
-          id="add-comment-name"
-          class="input control form__name form__text"
-          placeholder="Имя и фамилия"
-        />
-        <div id="name-validate" class="name_error hide"></div>
-      </div>
-      <div class="ratingcheck">
-        <input
-          id="add-comment-raiting"
-          class="rating2 control form__rating form__text"
-          placeholder="Оценка"
-          type="text"
-          max="5"
-          min="1"
-        />
-        <div id="raiting-validate" class="rating_error hide"></div>
-      </div>
+<div class="form__first-row">
+    <div class="namecheck">
+      <label for="name"></label>
+      <input name="username" placeholder="Имя и фамилия" type="text" class="input control form__name form__text" autocomplete="off">
+      <div class="name_error"><span class="error">Вы забыли указать имя и фамилию</span></div>
+      <div class="name_error2"><span class="error">Имя не может быть короче 2-х символов</span></div>
     </div>
-    <div class="form__second-row">
-      <textarea
-        id="add-comment-text"
-        class="review12345 form__review form__text"
-        placeholder="Текст отзыва"
-      ></textarea>
-      <div id="text-validate" class="add-comment__validate"></div>
+    <div class="ratingcheck">
+      <label for="rating"></label>
+      <input name="ratingform" placeholder="Оценка" type="number" class="rating2 control form__rating form__text" autocomplete="off">
+      <div class="rating_error"><span class="error__2">Оценка должна быть от 1 до 5</span></div>
     </div>
-    <div class="form__third-row">
-      
-   
-    <button
-      id="add-comment-btn"
-      type="button"
-      class="btn form__button"
-    ><span class="form__button-text">Отправить отзыв</span>
-    </button>
   </div>
+    <div class="form__second-row">
+      <div>
+      <label for="review"></label>
+      <textarea name="review2" placeholder="Текст отзыва" class="review12345 form__review form__text" autocomplete="off"></textarea>
     </div>
-  </form>
+    </div>
+
+    <div class="form__third-row">
+<button class="btn form__button" type="submit"><span class="form__button-text">Отправить отзыв</span></button>
+    </div>
+  </div>
+</form>
 
 
 </main>

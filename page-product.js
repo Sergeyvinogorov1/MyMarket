@@ -129,13 +129,28 @@ addToCart.addEventListener('click', () => {
     addToCart.style.backgroundColor = '';
     addToCart.style.color = 'white';
     addToCart.style.fontFamily = 'Inter';
-    addToCart.style.fontSize = '20px';
-    
-  }
+}
 
   cartInfoStorageInit();
 });
 
+
+
+function myFunction(x) {
+  if (x.matches) { // Если медиа запрос совпадает
+    addToCart.style.fontSize = '20px';
+  } else {
+    addToCart.style.fontSize = '16px';
+  }
+  
+}
+
+var x = window.matchMedia("(min-width: 361px)")
+myFunction(x) // Вызов функции прослушивателя во время выполнения
+x.addListener(myFunction) // Присоединить функцию прослушивателя при изменении состояния
+
+
+var x = window.matchMedia("(min-width: 361px)")
 
 function autoComplite() {
   const obj = Object.entries(storage);
@@ -159,7 +174,7 @@ function cartInfoStorageInit() {
   if (+cartInfo === 0) {
     addToCart.innerHTML = 'Добавить в корзину';
     addToCart.style.fontFamily = 'Inter';
-    addToCart.style.fontSize = '20px';
+
     addToCart.style.color = 'white';
     cartCount.classList.add('hide');
   }
@@ -170,6 +185,6 @@ function cartInfoStorageInit() {
     cartCount.classList.remove('hide');
     addToCart.style.backgroundColor = '#c4c4c4';
     addToCart.style.fontFamily = 'Inter';
-    addToCart.style.fontSize = '20px';
+
   }
 }
