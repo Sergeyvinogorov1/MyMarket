@@ -1,0 +1,68 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  
+  position: absolute;
+  width: 580px;
+  height: 35px;
+  left: 50px;
+  top: 91px;
+}
+
+@media (max-width: 1024px) {
+.breadcrumbs{
+left: 15px;
+}
+}
+
+@media (max-width: 360px) {
+  .breadcrumbs {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0px 0px 8px;
+      gap: 4px;
+      
+      position: absolute;
+      width: 340px;
+      height: 46px;
+      left: 7px;
+      top: 62px;        
+      }
+  }
+
+  .breadcrumbs__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #008CF0;
+}
+
+@media (max-width: 360px) {
+    .breadcrumbs__text {
+        font-size: 14px;
+        }
+    }
+
+    .breadcrumbs__blacktext {
+      color:#000000;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #018ad2; /* Цвет ссылок */
+}
+
+.link:active {
+    color: #A93A09;
+}
+
+.link:hover {
+    color: #F36223; /* Цвет ссылок */
+}
