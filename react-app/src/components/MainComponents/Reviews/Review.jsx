@@ -1,5 +1,5 @@
 const ReviewSection = ({
-  reviewPhoto,
+    reviewPhoto,
     customerName,
     reviewRating,
     experience,

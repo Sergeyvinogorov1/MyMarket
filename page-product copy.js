@@ -40,8 +40,6 @@ function autoComplite() {
   obj.forEach((elem) => {
     const key = elem[0];
     const value = elem[1];
-
-
   });
 }
 

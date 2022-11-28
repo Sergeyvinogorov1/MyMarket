@@ -1,7 +1,7 @@
 import Color from "./MainComponents/SelectColor/Color"
 import Configs from "./MainComponents/SelectConfig/Configs";
 import Description from "./MainComponents/Description";
-import Important from "./MainComponents/Important";
+import Sidebar from "./MainComponents/Sidebar";
 import Models from "./MainComponents/Models";
 import Specifications from "./MainComponents/Specifications";
 
@@ -33,7 +33,7 @@ const MainContent = () => {
       <Description />
       <Models />
     </div>
-    <Important />
+    <Sidebar />
       </div>
         </main>
     </>

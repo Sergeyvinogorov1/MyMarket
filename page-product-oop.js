@@ -112,10 +112,7 @@ class AddReviewForm extends Form {
         } else if (isNaN(Number(value))) {
           return { content: 'Оценка должна быть от 1 до 5', isValid: false };
         } else if (Number(value) < 1 || Number(value) > 5) {
-          return {
-            content: 'Оценка должна быть от 1 до 5',
-            isValid: false,
-          };
+          return { content: 'Оценка должна быть от 1 до 5', isValid: false };
         } else {
           return { content: value, isValid: true };
         }

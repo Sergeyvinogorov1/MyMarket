@@ -1,21 +1,35 @@
+import { useState } from 'react';
+
 import SelectButton from './SelectButton';
 
 const selectConfig = [
-  { id: '1', memorySize: '128', selected: true },
-  { id: '2', memorySize: '256', selected: false },
-  { id: '3', memorySize: '512', selected: false },
+  { id: '1', memorySize: '128'},
+  { id: '2', memorySize: '256'},
+  { id: '3', memorySize: '512'},
   
 ];
+
 const MemoryFilter = () => {
+  const [selectMemory, setSelectMemory] = useState('0');
+
+  const changeMemory = (id) => {
+    setSelectMemory(id);
+  };
+
   return (
     <div className="configuration">
-<div className="configuration__header">Конфигурация памяти: 128 ГБ</div>
-<div className="configuration__buttons">
+      <div className="configuration__header">Конфигурация памяти: 128 ГБ</div>
+      <div className="configuration__buttons">
         {selectConfig &&
           selectConfig.map((btn) => {
             return (
-              <SelectButton key={btn.id} selected={btn.selected} memorySize={btn.memorySize} />
-              
+              <SelectButton
+                key={btn.id}
+                id={btn.id}
+                selected={selectMemory === btn.id}
+                memorySize={btn.memorySize}
+                changeMemory={changeMemory}
+              />
             );
           })}
       </div>

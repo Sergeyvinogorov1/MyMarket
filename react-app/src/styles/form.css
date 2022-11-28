@@ -151,6 +151,13 @@
     
     z-index: 2;
 
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: white;
     /* Dark carrot */
     
     background: #DA4A0C;
@@ -161,8 +168,6 @@
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-
-    display: none;
 }
 
 @media (max-width: 1024px) {
@@ -188,8 +193,6 @@
         order: 1;
         align-self: stretch;
         flex-grow: 0;
-    
-        display: none;
     }
     
 }
@@ -397,10 +400,16 @@ border: 1px solid #888888;
     
     /* Inside auto layout */
     
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+
     flex: none;
     order: 1;
     flex-grow: 0;
-    display: none;
 }
 
 .rating_error.visible {
@@ -644,4 +653,9 @@ border: 1px solid #888888;
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+.hide {
+    display: none;
+
 }

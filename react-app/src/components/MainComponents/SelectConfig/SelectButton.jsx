@@ -1,6 +1,8 @@
-const SelectButton = ({ selected, memorySize }) => {
+const SelectButton = ({ selected, memorySize, id, changeMemory}) => {
     return (
-      <button className={selected ? 'btn configuration__button configuration-button--selected' : 'configuration__button'}>
+      <button
+      onClick={() => changeMemory(id)}
+       className={selected ? 'btn configuration__button configuration-button--selected' : 'configuration__button'}>
         {memorySize}ГБ
       </button>
     );

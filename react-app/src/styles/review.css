@@ -323,3 +323,23 @@
         }
         
     }
+
+    .add-comment__validate {
+        position: absolute;
+        bottom: -25px;
+      
+        min-width: max-content;
+        height: 15px;
+        background-color: orange;
+      
+        padding: 5px 15px;
+      
+        color: white;
+      }
+
+      .add-comment__person-name {
+        position: relative;
+        width: 67%;
+      }
+
+      
