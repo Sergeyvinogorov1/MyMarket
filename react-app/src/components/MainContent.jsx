@@ -1,9 +1,8 @@
-import Colors from "./MainComponents/Colors"
-import Configs from "./MainComponents/Configs";
+import Color from "./MainComponents/SelectColor/Color"
+import Configs from "./MainComponents/SelectConfig/Configs";
 import Description from "./MainComponents/Description";
 import Important from "./MainComponents/Important";
 import Models from "./MainComponents/Models";
-import ReviewSection from "./MainComponents/ReviewSection";
 import Specifications from "./MainComponents/Specifications";
 
 const MainContent = () => {
@@ -25,10 +24,10 @@ const MainContent = () => {
     </div>
 
 
-    <div class="characterics">
-      <div class="characterics__main">
+    <div className="characterics">
+      <div className="characterics__main">
         
-      <Colors />
+      <Color />
       <Configs />
       <Specifications />
       <Description />
@@ -36,7 +35,6 @@ const MainContent = () => {
     </div>
     <Important />
       </div>
-      <ReviewSection />
         </main>
     </>
   );

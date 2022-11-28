@@ -1,7 +1,7 @@
 const Breadcrumbs = () => {
   return (
     <>
-<nav class="breadcrumbs">
+<nav className="breadcrumbs">
   <div className="breadcrumbs__text">
     <a className="link" href="">Электроника</a>
     <span className="breadcrumbs__blacktext">&gt;</span>

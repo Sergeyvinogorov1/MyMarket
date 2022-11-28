@@ -1,0 +1,168 @@
+.characterics__color { /*Цвет товара*/
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+@media (max-width: 360px) {
+    .characterics__color {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+
+        
+        width: 332px;
+        height: 160px;
+        min-height: 0px;
+    }
+}
+
+.characterics__head { /*Текст товара (контейнер)*/
+    
+    margin: 0;
+    margin-bottom: 15px; /* Задает отступ 15 px*/
+    font-family: "Inter"; /* Шрифт */
+    font-size: 16px; /* Размер шрифта, указанного в макете */
+    font-weight: 700;  /* Выравнивание по вертикали */
+    line-height: 19px; /* Выравнивание по горизонтали */
+}
+
+@media (max-width: 360px) {
+    .characterics__head {
+        width: 138px;
+        height: 17px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        
+        
+        color: #000000;
+        
+    }
+}
+
+.characterics__list { /*Выбор цвета*/
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+@media (max-width: 360px) {
+    .characterics__list {
+        width: 360px;
+        height: 17px;
+        
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        flex-wrap: wrap;
+        gap: 8px;
+        color: #000000;
+
+        
+    }
+}
+
+.square-imgae { /* Выбор цвета */
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Выравнивание по высоте (центр) */
+    justify-content: center; /* Выравнивание по ширине (центр) */
+    padding: 0px;
+    gap: 10px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 360px) {
+    .square-imgae {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 10px;
+        
+        width: 60px;
+        height: 60px;
+        
+        /* Dark gray */
+        
+        border: 1px solid #888888;
+        border-radius: 4px;
+        
+        /* Inside auto layout */
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        
+    }
+}
+
+.square-imgae:hover {
+    background: #F2F2F2;;
+    cursor: pointer;
+}
+
+.square-imgae--selected {
+    border: 2px solid #F36223;
+}
+
+.square-imgae:active {
+    border: 2px solid #A93A09;
+}
+
+.square-imgae-1 {
+
+    width: 30.93px;
+    height: 60px;
+        
+        background: url('../../public/assets/phone-colors/color-1.webp');
+    }
+
+    .square-imgae-2 {
+
+        width: 44.45px;
+        height: 60px;
+            
+        background: url('../../public/assets/phone-colors/color-1.webp');
+        }
+
+        @media (max-width: 360px) {
+            .square-imgae-1 {
+        
+                width: 25.77px;
+                height: 50px;
+                    
+                background: url('../../public/assets/phone-colors/color-1.webp');
+                }
+            }
+        
+            @media (max-width: 360px) {
+                .square-imgae-2 {
+            
+                    width: 37.04px;
+                    height: 50px;
+                        
+                    background: url('../../public/assets/phone-colors/color-1.webp');
+                    }
+                }
