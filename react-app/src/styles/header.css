@@ -296,6 +296,36 @@
   flex-grow: 0;
 }
 
+.logo {
+  position: absolute;
+  width: 33.11px;
+  height: 43px;
+  top: 19px;
+  left: 50px;
+  
+ /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+@media (max-width: 1024px) {
+  .logo {
+      position: absolute;
+      width: 33.62px;
+      height: 43px;
+      left: 15px;
+      top: 18.5px;
+ }
+}
+@media (max-width: 360px) {
+  .logo {
+      position: absolute;
+      width: 23.76px;
+      height: 30px;
+      left: 10px;
+      top: 8.5px;
+ }
+}
 
 .icon-cart {
   content: "";

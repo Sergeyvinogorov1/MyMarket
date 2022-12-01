@@ -34,6 +34,11 @@ left: 15px;
       }
   }
 
+  .breadcrumbs__link {
+    color: #008CF0;
+    text-decoration: none;
+  }
+
   .breadcrumbs__text {
     font-family: "Inter";
     font-style: normal;

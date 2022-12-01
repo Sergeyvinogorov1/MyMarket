@@ -13,8 +13,6 @@ const MainContent = () => {
       <div className="title__item">Смартфон Apple iPhone 13, синий</div>
     </div>
 
-
-
     <div className="images">
       <img src="./assets/phone-images/image-1.webp" height="387" alt="Общий вид" className="images__phone1"/>
       <img src="./assets/phone-images/image-2.webp" height="387" alt="Лицевая часть" className="images__phone2"/>
