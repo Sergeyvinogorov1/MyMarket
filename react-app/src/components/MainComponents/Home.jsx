@@ -10,7 +10,7 @@ const Home = () => {
     <br className="main__br__1500px"/>Но в рамках курса главная страница используется лишь
     <br className="main__br"/> в демонстрационных целях
 </div>
-        <Link to="/product" class="link">Перейти на страницу товара</Link>
+        <Link to="/product" className="link">Перейти на страницу товара</Link>
         </main>
 
       
