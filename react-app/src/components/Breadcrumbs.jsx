@@ -1,17 +1,37 @@
+import styled from 'styled-components';
+
 const Breadcrumbs = () => {
+  const Navigation = styled.nav`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  
+  position: absolute;
+  width: 580px;
+  height: 35px;
+  left: 50px;
+  top: 91px;
+  `;
+
+  const BredcrumbsLink = styled.a`
+  color: #008CF0;
+  text-decoration: none;
+  `;
+
   return (
     <>
-<nav className="breadcrumbs">
+    <Navigation>
   <div className="breadcrumbs__text">
-    <a className="breadcrumbs__link" href="/">Электроника</a>
+    <BredcrumbsLink  href="/">Электроника</BredcrumbsLink>
     <span className="breadcrumbs__blacktext"> &gt; </span>
-    <a className="breadcrumbs__link" href="/">Смартфоны и гаджеты</a>
+    <BredcrumbsLink  href="/">Смартфоны и гаджеты</BredcrumbsLink>
     <span className="breadcrumbs__blacktext"> &gt; </span>
-    <a className="breadcrumbs__link" href="/">Мобильные телефоны</a>
+    <BredcrumbsLink href="/">Мобильные телефоны</BredcrumbsLink>
      <span className="breadcrumbs__blacktext"> &gt; </span>
-    <a className="breadcrumbs__link" href="/">Apple</a>
+    <BredcrumbsLink  href="/">Apple</BredcrumbsLink>
   </div>
-</nav>
+</Navigation>
     </>
   );
 };
