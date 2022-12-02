@@ -12,6 +12,26 @@ const Breadcrumbs = () => {
   height: 35px;
   left: 50px;
   top: 91px;
+
+  @media (max-width: 1024px) {
+    left: 15px;
+  }
+    
+
+  @media (max-width: 360px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 0px 8px;
+    gap: 4px;
+    
+    position: absolute;
+    width: 340px;
+    height: 46px;
+    left: 7px;
+    top: 62px;   
+  }
   `;
 
   const BredcrumbsLink = styled.a`
