@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const storage = window.localStorage;
 
 const initialState = {
-  favoriteCount: storage.getItem('favoriteCount') || 0,
+  favoriteCount: Number(storage.getItem('favoriteCount')) || 0,
 };
 
 export const favoriteSlice = createSlice({
