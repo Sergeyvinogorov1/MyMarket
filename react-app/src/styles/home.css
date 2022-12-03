@@ -10,11 +10,6 @@ html {
 }
 
   
-@media (max-width: 360px) {
-  .html {
-
-      }
-  }
 
 .main__wrapper {
     display: flex;
@@ -39,7 +34,6 @@ html {
     padding: 0px;
     gap: 20px;
     
-    position: absolute;
     width: 1024px;
     height: 1365px;
     left: 0px; 
@@ -58,10 +52,10 @@ html {
       position: absolute;
       width: 360px;
       height: 1365px;
-      left: 0px;   
+      left: 0px;
+      top: 64px;      
         }
     }
-  
 
 
 .main__content {
@@ -80,8 +74,8 @@ html {
 
 @media (max-width: 360px) {
   .main__content {
-    width: 340px;
-    height: 68px;
+    width: 337px;
+    height: 67px;
     
     font-family: 'Inter';
     font-style: normal;
@@ -100,6 +94,14 @@ html {
     align-self: stretch;
     flex-grow: 0;
       }
+  }
+  .breadcrumbs__text {
+    z-index: 1;
+    margin-top: -5px;
+  }
+  .images {
+    margin-top: -5px;
+    margin-left: -6px;
   }
 
   .main__br {

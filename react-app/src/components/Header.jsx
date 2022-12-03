@@ -12,7 +12,7 @@ const Header = () => {
     <div className="header-box__main">
     <Link style={{color: 'black'}} to="/">
       <div className="logo">
-        <img src="./assets/icon-0.svg" width="36.5" height="43" alt="Логотип" />
+        <img src="./assets/icon-0.svg" className="logo__sizes" alt="Логотип" />
       </div>
     
     <div className="header-box__text">
@@ -28,8 +28,7 @@ const Header = () => {
           </div>
           <svg
                 className="icon-heart"
-                width="43"
-                height="35"
+
                 viewBox="0 0 28 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">

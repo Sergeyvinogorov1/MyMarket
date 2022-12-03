@@ -30,13 +30,13 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
-        gap: 15px;
+        gap: 0px;
         
         position: absolute;
-        width: 594px;
-        height: 372px;
-        left: 15px;
-        top: 2198px;
+        width: 335px;
+        height: 380px;
+        left: 0;
+        margin-top: -8px;
     }
 }
 
@@ -84,6 +84,12 @@
         
     }
 }
+@media (max-width: 360px) {
+    .form__block {
+        gap: 0px;
+        width: 380px;
+    }
+}
 
 .form__first-row {
     display: flex;
@@ -107,7 +113,22 @@
         width: 594px;
     }
 }
+@media (max-width: 360px) {
+    .form__first-row {
+        flex-direction: column;
+        height: auto;
+        gap: 15px;
+        margin-top: -7px;
+        width: 380px;
+    }
+}
 
+@media (max-width: 360px) {
+.namecheck {
+    width: 335px;
+    height: 37px;
+}
+}
 .form__name {
     box-sizing: border-box;
 
@@ -133,7 +154,8 @@
         align-items: flex-start;
         padding: 0px;
         gap: 20px;
-        
+        text-indent: 11px;
+
         width: 335px;
         height: 37px;
     }
@@ -337,6 +359,14 @@
     flex-grow: 0;
 }
 
+@media (max-width: 360px) {
+    .form__text {
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
 .form__rating {
     box-sizing: border-box;
 
@@ -359,11 +389,20 @@
     flex: none;
     order: 1;
     flex-grow: 0;
+
+    outline: none;
 }
 
 @media (max-width: 360px) {
+.ratingcheck {
+    z-index: -1;
+}
+}
+@media (max-width: 360px) {
     .form__rating {
         box-sizing: border-box;
+        outline: none;
+        width: 380px;
 
 /* Auto layout */
 
@@ -371,8 +410,6 @@ display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 10px 15px;
-
-width: 335px;
 height: 37px;
 
 /* Dark gray */
@@ -440,55 +477,6 @@ border: 1px solid #888888;
     display: none;
 }
 
-.form__rating:hover {
-    box-sizing: border-box;
-
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-    
-    width: 175px;
-    height: 49px;
-    
-    /* Black */
-    
-    border: 1px solid #000000;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    outline: none;
-}
-
-.form__rating:focus {
-    box-sizing: border-box;
-
-    /* Auto layout */
-    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px 20px;
-    
-    width: 175px;
-    height: 49px;
-    
-    /* Black */
-    
-    border: 1px solid #000000;
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    outline: none;
-}
 
 .form__review {
     box-sizing: border-box;
@@ -531,6 +519,12 @@ border: 1px solid #888888;
     }
 }
 
+@media (max-width: 360px) {
+    .form__review {
+        width: 380px;
+    }
+}
+
 
 
 .form__second-row {
@@ -556,6 +550,15 @@ border: 1px solid #888888;
     }
     
 }
+@media (max-width: 360px){
+    .form__second-row {
+        width: 335px;
+        height: 190px;
+        margin-top: -10px
+    }
+    
+}
+
 
 .form__third-row {
     display: flex;
@@ -579,6 +582,16 @@ border: 1px solid #888888;
     }
     
 }
+@media (max-width: 360px) {
+    .form__third-row {
+    margin-top: 39px;
+    gap: 10px;
+    width: 150px;
+    height: 37px;
+    }
+    
+}
+
 
 .form__button {
     display: flex;
@@ -601,6 +614,24 @@ border: 1px solid #888888;
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+@media (max-width: 360px) {
+    .form__button {
+        position: absolute;
+        z-index: 1;
+    top: 356px;
+    }
+}
+
+@media (max-width: 360px) {
+    .form__second-row {
+        width: 335px;
+        position: absolute;
+        top: 126px;
+        height: 164px;
+
+    }
 }
 
 .form__button:hover {
@@ -633,6 +664,19 @@ border: 1px solid #888888;
     flex: none;
     order: 0;
     flex-grow: 0;
+}
+
+@media (max-width: 360px) {
+    .form__button {
+        width: 150px;
+        padding: 0;
+    }
+}
+@media (max-width: 360px) {
+    .form__button-text{
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
 
 .form__title {

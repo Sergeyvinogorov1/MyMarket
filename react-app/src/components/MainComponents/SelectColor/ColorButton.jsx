@@ -5,7 +5,7 @@ const Color = ({selected, src, id, selectColor}) => {
     <div
     onClick={() => selectColor(id)}
       className={selected ? 'square-imgae square-imgae--selected' : 'square-imgae'}>
-      <img src={src} alt="" width="" height="60" />
+      <img src={src} className="square-imgae-1" />
     </div>
   );
 };

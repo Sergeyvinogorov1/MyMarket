@@ -24,6 +24,13 @@
     }
 }
 
+@media (max-width: 360px) {
+    .review-section__list
+    {
+        width: 360px;
+    }
+}
+
 .review-first {
     display: flex;
     flex-direction: row;
@@ -44,6 +51,13 @@
     }
     
 }
+@media (max-width: 360px)
+{
+    .review-first{
+    width: 360px;
+    }
+    
+}
 
 
 .review-photo {
@@ -60,6 +74,12 @@
     }
     
 }
+@media (max-width: 360px) {
+    .review-photo {
+        width: 60px;
+        height: 60px;
+    }
+}
 
 .review-wrapper {
     display: flex;
@@ -68,6 +88,14 @@
     padding: 0px;
     gap: 20px;
 }
+
+@media (max-width: 360px) {
+    .review-wrapper {
+        margin-top: -3px;
+        margin-left: -15px;
+    }
+}
+
 
 .review-header {
     display: flex;
@@ -134,7 +162,13 @@
         height: 207px;
     }
     }
-
+@media (max-width: 360px) {
+    .review-main
+    {
+        margin-left: -76px;
+        width: 335px;
+    }
+    }
     .review-experience {
         
         font-family: "Inter";
@@ -192,6 +226,19 @@
         }
         
     }
+    @media (max-width: 360px) {
+        .reviews-separator {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0px;
+            
+            width: 335px;
+            height: 1px;
+            margin-top: 22px
+        }
+        
+    }
     
     .separator {
         box-sizing: border-box;
@@ -220,6 +267,12 @@
     @media (max-width: 1024px) {
         .separator {
             width: 464px;
+        }   
+    }
+
+    @media (max-width: 360px) {
+        .separator {
+            width: 360px;
         }   
     }
     
@@ -255,6 +308,14 @@
         top: 1532px;
         }
     }
+    
+    @media (max-width: 360px){
+        .review-section {
+            position: absolute;
+            margin-top: 432px;
+            width: 360px;
+        }
+    }
 
     .review-section__header {
         display: flex;
@@ -274,6 +335,13 @@
     }
     }
     
+    @media (max-width: 360px) {
+        .review-section__header {
+            width: 380px;
+        }
+        }
+        
+
     .review-section__wrapper {
         display: flex;
         flex-direction: row;
@@ -281,6 +349,7 @@
         padding: 0px;
         gap: 10px;
     }
+
     
     .review-section__title {
     
@@ -292,6 +361,12 @@
     
         color: #000000;
     }
+    @media (max-width: 360px){
+        .review-section__title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    }
     
     .review-section__count {
     
@@ -302,6 +377,13 @@
         line-height: 29px;
     
         color: #888888;
+    }
+
+    @media (max-width: 360px) {
+        .review-section__count {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 
     .review-second {

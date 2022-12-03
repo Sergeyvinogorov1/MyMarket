@@ -9,7 +9,7 @@
   padding: 0px;
   gap: 9px;
   
-  width: 1268px;
+  
   height: 80px;
   
   
@@ -20,22 +20,7 @@
   flex-grow: 0;
 }
 
-@media (max-width: 1024px) {
-  .header-box__main {
-      width: 864px;
-      height: 80px;
-      gap: 10px;
-  
-      }
-  }
-  
-  @media (max-width: 360px) {
-      .header-box__main {
-          width: 224.37px;
-          height: 39px;
-      
-          }
-      }
+
 
       .header-box__text {
         width: 1225.82px;
@@ -138,7 +123,22 @@
                 order: 0;
                 flex-grow: 0;
               }
-
+              @media (max-width: 1024px) {
+                .header-box__main {
+                    width: 864px;
+                    height: 80px;
+                    gap: 10px;
+                
+                    }
+                }
+                
+                @media (max-width: 360px) {
+                    .header-box__main {
+                        width: 224.37px;
+                        height: 39px;
+                    
+                        }
+                    }
 
               .header-box__icons {
                 display: flex;
@@ -193,6 +193,13 @@
               z-index: 1;
           }
 
+          @media (max-width: 1024px) {
+            .heart-icon {
+              width: 52px;
+              height: 50px;
+            }
+        }
+
           .heart {
             display: flex;
             flex-direction: column;
@@ -234,6 +241,24 @@
           flex-grow: 0;
       }
 
+      @media (max-width: 1024px) {
+        .icon-text__heart {
+          top: 21px;
+          left: 915px;
+        }
+    }
+
+   @media (max-width: 360px) {
+      .icon-text__heart {
+        position: absolute;
+width: 10px;
+height: 10px;
+left: 20px;
+top: 13px;
+left: 296px;
+left: 298px;
+      }
+  }
       .icon-heart {
         content: "";
     
@@ -241,13 +266,32 @@
         background-repeat: no-repeat;
         background-position: center center;
         position: absolute;
-        height: 49.67px;
+        width: 45px;
+        height: 65px;
         left: 0px;
-        top: 16px;
-        height: 60.67px;
-        left: 1333px;
+        top: 14px;
+        left: 1332px;
+        background-size: contain;
     }
 
+
+          @media (max-width: 1024px) {
+            .icon-heart {
+              width: 45px;
+              height: 65px;
+              top: 12px;
+    left: 894px;
+            }
+        }
+
+        @media (max-width: 360px) {
+          .icon-heart {
+            height: 23px;
+            top: 16px;
+            width: 26px;
+            left: 280px;
+          }
+      }
 
     .cart-icon {
       width: 189px;
@@ -300,6 +344,17 @@
   flex-grow: 0;
 }
 
+@media (max-width: 360px) {
+  .icon-text__cart {
+
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 89px;
+    top: 12px;
+  }
+}
+
 .logo {
   position: absolute;
   width: 33.11px;
@@ -326,22 +381,32 @@
       position: absolute;
       width: 23.76px;
       height: 30px;
-      left: 10px;
-      top: 8.5px;
+      left: 8px;
+      top: 7.5px;
  }
 }
 
 .icon-cart {
+  position: absolute;
   content: "";
-
-
   background-image: url('../../public/assets/Header2.svg');
   background-repeat: no-repeat;
   background-position: center center;
-  width: 50x;
-  height: 90px;
-  left: 0px;
-  top: 0px;
+  width: 40px;
+  height: 65px;
+  left: 75px;
+  top: 14px;
+  background-size: contain;
+}
+
+@media (max-width: 360px) {
+  .icon-cart {
+      position: absolute;
+      width: 146.76px;
+      height: 24px;
+      left: 10px;
+      top: 15.5px;
+ }
 }
 
 .header-box__color {
@@ -385,7 +450,7 @@
       }
   }
   
-  @media (max-width: 1024px) {
+  @media (max-width: 360px) {
       .header-box {
           display: flex;
           flex-direction: row;
@@ -394,7 +459,7 @@
           padding: 8px 10px;
           gap: 10px;
           
-          position: absolute;
+
           width: 360px;
           height: 55px;
           left: 0px;
@@ -402,3 +467,16 @@
           }
       }
       
+
+      .logo__sizes {
+        width: 36.5px;
+        height: 43px;
+      }
+
+      @media (max-width: 360px) {
+        .logo__sizes {
+          width: 24.5px;
+          height: 28px;
+            }
+        }
+        

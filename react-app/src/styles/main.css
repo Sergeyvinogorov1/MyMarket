@@ -1,27 +1,4 @@
-html {
-    color: black;
-    font-size: 18px;
-    max-width: 1500px;
-    font-family: "Inter";
-    margin: 0 auto;
-    position: relative;
-    width: 1500px;
-    background: #F8FAFE;
-}
-@media (max-width: 1024px) {
-    html {
-        position: relative;
-        width: 1024px;
 
-        background: #F8FAFE;
-   }
-}
-@media (max-width: 360px) {
-    html {
-        width: 360px;
-
-   }
-}
 .main {
     position: relative;
 }
@@ -138,6 +115,13 @@ html {
         height: 272px;
    }
 }
+
+@media (max-width: 360px) {
+    .images__phone3 {
+    display: none;
+   }
+}
+
 .images__phone4 {
     width: 361.5px;
     height: 387px;
@@ -151,6 +135,13 @@ html {
         height: 272px;
    }
 }
+
+@media (max-width: 360px) {
+    .images__phone4 {
+    display: none;
+   }
+}
+
 .images__phone5 {
     width: 299.22px;
     height: 387px;
@@ -164,6 +155,13 @@ html {
         height: 272px;
    }
 }
+
+@media (max-width: 360px) {
+    .images__phone5 {
+    display: none;
+   }
+}
+
 .main {
     margin-bottom: 100px;
 }
@@ -280,6 +278,7 @@ body {
         align-items: flex-start;
         padding: 0px;
         gap: 30px;
+        width: 360px;
         position: absolute;
         left: 8px;
         top: 490px;
@@ -418,14 +417,15 @@ body {
     height: 10px;
     border-radius: 15px;
     margin-right: 10px;
+    left: 0;
 }
 @media (max-width: 360px) {
     .specifications__list li::before {
         content: "";
         display: inline-block;
         background-color: #888888;
-        width: 5px;
-        height: 5px;
+        width: 8px;
+        height: 8px;
         border-radius: 15px;
         margin-right: 10px;
    }
@@ -452,6 +452,7 @@ body {
 .specifications__element::marker {
     color: #888888;
 }
+
 .description {
    /*Контейнер описание*/
     width: 880px;
@@ -588,6 +589,8 @@ body {
     .description__item1{
         width: 338px;
         height: 170px;
+        margin-top: -10px;
+
         font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
@@ -890,6 +893,11 @@ body {
     background: #F36223;
     border-radius: 500px;
 }
+@media (max-width: 360px){
+    .important__sale {
+        margin-left: -4px;
+    }
+}
 .important__saletext {
     width: 31px;
     height: 16px;
@@ -1129,6 +1137,13 @@ body {
         left: 15px;
    }
 }
+
+@media (max-width: 360px) {
+    .images {
+        width: 360px;
+   }
+}
+
 .images__phone1 {
     width: 304.33px;
     height: 387px;
@@ -1274,6 +1289,18 @@ body {
 
 .container {
     height: 2874px;
+}
+
+@media (max-width: 1024px){
+    .container {
+        height: 2650px;
+    }
+}
+
+@media (max-width: 360px){
+    .container {
+        height: 3044px;
+    }
 }
 
 
@@ -1578,7 +1605,7 @@ body {
 }
 @media (max-width: 360px) {
     .description__paragraphs{
-        width: 594px;
+        width: 360px;
         height: 482px;
         position: revert;
    }
