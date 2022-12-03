@@ -42,10 +42,7 @@ const Header = () => {
               </svg>
 
     <div className="cart-icon">
-    
-
            {cartCounts > 0 ? <div className="icon-text__cart cart">{cartCounts}</div> : ''}
-
           <div className="icon-cart"></div>
     </div>
       </div>
