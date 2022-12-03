@@ -190,6 +190,7 @@
               flex: none;
               order: 0;
               flex-grow: 0;
+              z-index: 1;
           }
 
           .heart {
@@ -218,7 +219,8 @@
           font-size: 14px;
           line-height: 14px;
           /* identical to box height, or 100% */
-          
+          left: 1354px;
+          position: absolute;
           
           /* White */
           
@@ -238,10 +240,12 @@
         background-image: url('../../public/assets/Header1.svg');
         background-repeat: no-repeat;
         background-position: center center;
-    
+        position: absolute;
         height: 49.67px;
         left: 0px;
-        top: 0px;
+        top: 16px;
+        height: 60.67px;
+        left: 1333px;
     }
 
 

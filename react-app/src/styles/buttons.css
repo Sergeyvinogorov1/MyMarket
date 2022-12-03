@@ -1,0 +1,63 @@
+.button-primary {
+    background: #f36223;
+    border: 1px solid #888888;
+    border: none;
+    border-radius: 4px;
+  
+    color: white;
+  }
+  
+  .button-primary:hover {
+    background: #da4a0c;
+    border: 1px solid #888888;
+    cursor: pointer;
+  }
+  
+  .button-primary:active {
+    background: #a93a09;
+    border: 1px solid #888888;
+  }
+  
+  .phone-price__added-cart {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Inter;
+    color: white;
+    font-size: 20px;
+    background: #f36223;
+    width: 100%;
+    border: 1px solid #888888;
+    padding: 20px 0;
+    order: 1;
+  }
+
+  .phone-price__added-cart2 {
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Inter;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(196, 196, 196);
+    width: 100%;
+    border: 1px solid #888888;
+    padding: 20px 0;
+    order: 1;
+  }
+
+
+  .button-backet--cart::before {
+    content: "";
+    display: inline-block;
+
+    background-image: url('../../public/assets/cart.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 24px;
+    height: 24px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

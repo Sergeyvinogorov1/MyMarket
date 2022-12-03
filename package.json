@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@kundinos/react-hooks": "^0.12.2"
+  }
+}
